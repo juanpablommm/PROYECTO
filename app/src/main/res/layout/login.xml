@@ -11,7 +11,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
-        android:layout_marginTop="45dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,19 +20,19 @@
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="21dp"
         android:ems="10"
         android:inputType="numberPassword"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInventario" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textInventario"
-        android:layout_width="206dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="53dp"
+        android:layout_width="226dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="36dp"
         android:text="@string/TexInventario"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -45,9 +44,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="83dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="83dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
@@ -56,7 +56,29 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="30dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="314dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="226dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/rol"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInventario" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="226dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="83dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
