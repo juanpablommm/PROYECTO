@@ -10,8 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".loguinadministrador"></activity>
-        <activity android:name=".puespues" />
-        <activity android:name=".popo" />
         <activity
             android:name=".Menu"
             android:label="@string/title_activity_menu"
