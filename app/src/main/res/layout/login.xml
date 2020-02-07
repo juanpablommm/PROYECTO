@@ -2,37 +2,37 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contraseña"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
+        android:layout_width="228dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="83dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="21dp"
+        android:layout_width="227dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="83dp"
         android:ems="10"
         android:inputType="numberPassword"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/Usuario" />
 
     <TextView
         android:id="@+id/textInventario"
         android:layout_width="226dp"
         android:layout_height="37dp"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="50dp"
         android:text="@string/TexInventario"
         android:textColor="#000000"
         android:textSize="18sp"
@@ -41,34 +41,36 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="83dp"
+        android:layout_width="371dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="81dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/Usuario"
+        android:layout_width="227dp"
+        android:layout_height="22dp"
         android:layout_marginStart="83dp"
         android:layout_marginTop="30dp"
-        android:text="TextView"
+        android:text="@string/usuario"
+        android:textColor="#030303"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/roles"
         android:layout_width="226dp"
         android:layout_height="22dp"
         android:layout_marginStart="83dp"
         android:layout_marginTop="12dp"
         android:text="@string/rol"
+        android:textColor="#030303"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInventario" />
@@ -76,9 +78,21 @@
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="226dp"
-        android:layout_height="37dp"
+        android:layout_height="15dp"
         android:layout_marginStart="83dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/roles" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="228dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/contraseña"
+        android:textColor="#030303"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
