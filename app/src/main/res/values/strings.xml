@@ -15,7 +15,11 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="TexInventario">INVENTARIO</string>
-    <string name="rol">Rol</string>
+    <string name="rol">Roles</string>
     <string name="usuario">Usuario</string>
     <string name="contraseña">Contraseña</string>
+    <string name="CambiarContraseña">Olvide Contraseña</string>
+    <string name="Inicio">ingresar</string>
+    <string name="campo1">numerico</string>
+    <string name="campo2">:</string>
 </resources>

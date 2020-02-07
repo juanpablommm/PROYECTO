@@ -3,41 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/contraseña"
+    android:background="@drawable/port"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="228dp"
-        android:layout_height="43dp"
+        android:id="@+id/CampoContraseña"
+        android:layout_width="227dp"
+        android:layout_height="31dp"
         android:layout_marginStart="83dp"
+        android:background="#4F03A9F4"
         android:ems="10"
+        android:hint="@string/campo2"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/CampoUsuario"
         android:layout_width="227dp"
         android:layout_height="31dp"
         android:layout_marginStart="83dp"
+        android:background="#4F03A9F4"
         android:ems="10"
+        android:hint="@string/campo1"
         android:inputType="numberPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Usuario" />
-
-    <TextView
-        android:id="@+id/textInventario"
-        android:layout_width="226dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="50dp"
-        android:text="@string/TexInventario"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -54,55 +47,73 @@
     <TextView
         android:id="@+id/Usuario"
         android:layout_width="227dp"
-        android:layout_height="22dp"
+        android:layout_height="31dp"
         android:layout_marginStart="83dp"
         android:layout_marginTop="30dp"
         android:text="@string/usuario"
+        android:textAllCaps="false"
         android:textColor="#030303"
-        android:textSize="18sp"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerOpciones" />
 
     <TextView
         android:id="@+id/roles"
-        android:layout_width="226dp"
-        android:layout_height="22dp"
+        android:layout_width="227dp"
+        android:layout_height="31dp"
         android:layout_marginStart="83dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="50dp"
         android:text="@string/rol"
+        android:textAllCaps="false"
         android:textColor="#030303"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInventario" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="226dp"
-        android:layout_height="15dp"
+        android:id="@+id/SpinnerOpciones"
+        android:layout_width="225dp"
+        android:layout_height="27dp"
         android:layout_marginStart="83dp"
+        android:background="#4F03A9F4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/roles" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="228dp"
-        android:layout_height="24dp"
+        android:layout_width="223dp"
+        android:layout_height="33dp"
         android:layout_marginStart="83dp"
         android:layout_marginTop="30dp"
         android:text="@string/contraseña"
         android:textColor="#030303"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/CampoUsuario" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="60dp"
-        android:text="@string/txtsebastian1"
+        android:id="@+id/buttonCambiar"
+        android:layout_width="228dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="24dp"
+        android:background="#4F03A9F4"
+        android:text="@string/CambiarContraseña"
+        android:textIsSelectable="false"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
+
+    <Button
+        android:id="@+id/buttonIngresar"
+        android:layout_width="115dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="24dp"
+        android:background="#4F03A9F4"
+        android:text="@string/Inicio"
+        android:textIsSelectable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CampoContraseña" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
