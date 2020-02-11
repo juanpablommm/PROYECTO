@@ -8,18 +8,18 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Cordinador</string>
-    <string name="menu_gallery">Administrador</string>
-    <string name="menu_slideshow">Cuentadante</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
-    <string name="TexInventario">INVENTARIO</string>
-    <string name="rol">Roles</string>
-    <string name="usuario">Usuario</string>
-    <string name="contraseña">Contraseña</string>
-    <string name="CambiarContraseña">Olvide Contraseña</string>
-    <string name="Inicio">ingresar</string>
-    <string name="campo1">numerico</string>
-    <string name="campo2">:</string>
+    <string name="menu_home">Consultar</string>
+    <string name="menu_gallery">Prestamo</string>
+    <string name="menu_slideshow">Devolucion</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Rol">Rol</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="Recuperar_contraseña">Recuperar Contraseña</string>
+    <string name="Ingresar_Usuario">Cedula</string>
+    <string name="Ingresar_Contraseña" />
 </resources>

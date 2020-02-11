@@ -1,4 +1,4 @@
-package com.example.proyectoinventario.ui.gallery;
+package com.example.proyectoinventario.ui.Registrar_Devolucion;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.proyectoinventario.R;
 
-public class GalleryFragment extends Fragment {
+public class Registrar_Devolucion extends Fragment {
 
     private GalleryViewModel galleryViewModel;
 
@@ -22,7 +22,7 @@ public class GalleryFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
                 ViewModelProviders.of(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+        View root = inflater.inflate(R.layout.registrar_devolucion, container, false);
         final TextView textView = root.findViewById(R.id.text_gallery);
         galleryViewModel.getText().observe(this, new Observer<String>() {
             @Override

@@ -14,22 +14,12 @@
         android:layout_marginStart="83dp"
         android:background="#4F03A9F4"
         android:ems="10"
-        android:hint="@string/campo2"
+        android:hint="@string/Ingresar_Contraseña"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <EditText
-        android:id="@+id/CampoUsuario"
-        android:layout_width="227dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="83dp"
-        android:background="#4F03A9F4"
-        android:ems="10"
-        android:hint="@string/campo1"
-        android:inputType="numberPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Usuario" />
+
 
     <ImageView
         android:id="@+id/imageView2"
@@ -49,7 +39,7 @@
         android:layout_height="31dp"
         android:layout_marginStart="83dp"
         android:layout_marginTop="30dp"
-        android:text="@string/usuario"
+        android:text="@string/Usuario"
         android:textAllCaps="false"
         android:textColor="#030303"
         android:textIsSelectable="false"
@@ -63,7 +53,7 @@
         android:layout_height="31dp"
         android:layout_marginStart="83dp"
         android:layout_marginTop="50dp"
-        android:text="@string/rol"
+        android:text="@string/Rol"
         android:textAllCaps="false"
         android:textColor="#030303"
         android:textSize="24sp"
@@ -85,7 +75,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="83dp"
         android:layout_marginTop="30dp"
-        android:text="@string/contraseña"
+        android:text="@string/Contraseña"
         android:textColor="#030303"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +88,7 @@
         android:layout_marginStart="83dp"
         android:layout_marginTop="24dp"
         android:background="#4F03A9F4"
-        android:text="@string/CambiarContraseña"
+        android:text="@string/Recuperar_contraseña"
         android:textIsSelectable="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
@@ -111,11 +101,23 @@
         android:layout_marginStart="132dp"
         android:layout_marginTop="24dp"
         android:background="#4F03A9F4"
-        android:text="@string/Inicio"
+        android:onClick="Ingresar"
+        android:text="@string/Ingresar"
         android:textIsSelectable="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CampoContraseña" />
 
+    <EditText
+        android:id="@+id/CampoUsuario"
+        android:layout_width="227dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="83dp"
+        android:background="#4F03A9F4"
+        android:ems="10"
+        android:hint="@string/Ingresar_Usuario"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Usuario" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

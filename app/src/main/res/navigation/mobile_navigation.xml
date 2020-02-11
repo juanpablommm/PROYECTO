@@ -3,41 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/Consultar_Inventario">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.proyectoinventario.ui.home.HomeFragment"
+        android:id="@+id/Consultar_Inventario"
+        android:name="com.example.proyectoinventario.ui.Registrar_Prestamo.Registrar_Prestamo"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/consultar_inventario" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.proyectoinventario.ui.gallery.GalleryFragment"
+        android:id="@+id/Registrar_Devolucion"
+        android:name="com.example.proyectoinventario.ui.Registrar_Devolucion.Registrar_Devolucion"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/registrar_devolucion" />
+
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.proyectoinventario.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.proyectoinventario.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
-
-    <fragment
-        android:id="@+id/nav_share"
+        android:id="@+id/Registrar_Prestamo"
         android:name="com.example.proyectoinventario.ui.share.ShareFragment"
-        android:label="@string/menu_share"
+        android:label="@layout/registrar_prestamo"
         tools:layout="@layout/fragment_share" />
 
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.proyectoinventario.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
 </navigation>
