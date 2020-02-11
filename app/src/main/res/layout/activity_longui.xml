@@ -2,11 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/contraseña"
-    android:background="@drawable/port"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Longui">
+
 
     <EditText
         android:id="@+id/CampoContraseña"
@@ -104,6 +103,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
 
+
     <Button
         android:id="@+id/buttonIngresar"
         android:layout_width="115dp"
@@ -115,5 +115,7 @@
         android:textIsSelectable="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CampoContraseña" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
