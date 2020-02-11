@@ -1,4 +1,4 @@
-package com.example.proyectoinventario;
+package com.example.proyectoinventario.ui;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,16 +10,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.proyectoinventario.R;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ConsultasCoordinador.OnFragmentInteractionListener} interface
+ * {@link Registrar_Usuario.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ConsultasCoordinador#newInstance} factory method to
+ * Use the {@link Registrar_Usuario#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ConsultasCoordinador extends Fragment {
+public class Registrar_Usuario extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,7 +32,7 @@ public class ConsultasCoordinador extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public ConsultasCoordinador() {
+    public Registrar_Usuario() {
         // Required empty public constructor
     }
 
@@ -41,11 +42,11 @@ public class ConsultasCoordinador extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ConsultasCoordinador.
+     * @return A new instance of fragment Registrar_Usuario.
      */
     // TODO: Rename and change types and number of parameters
-    public static ConsultasCoordinador newInstance(String param1, String param2) {
-        ConsultasCoordinador fragment = new ConsultasCoordinador();
+    public static Registrar_Usuario newInstance(String param1, String param2) {
+        Registrar_Usuario fragment = new Registrar_Usuario();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,7 +67,7 @@ public class ConsultasCoordinador extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_consultas_coordinador, container, false);
+        return inflater.inflate(R.layout.fragment_registrar__usuario, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -1,4 +1,4 @@
-package com.example.proyectoinventario.ui.tools;
+package com.example.proyectoinventario.ui.Asignar_Inventario;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

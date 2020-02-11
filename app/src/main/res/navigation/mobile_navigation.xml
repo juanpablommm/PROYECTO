@@ -20,8 +20,8 @@
 
     <fragment
         android:id="@+id/Registrar_Prestamo"
-        android:name="com.example.proyectoinventario.ui.share.ShareFragment"
+        android:name="com.example.proyectoinventario.ui.Registrar_Activos.Registrar_Activos"
         android:label="@layout/registrar_prestamo"
-        tools:layout="@layout/fragment_share" />
+        tools:layout="@layout/registrar_activos" />
 
 </navigation>
