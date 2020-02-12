@@ -8,29 +8,29 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class Login extends AppCompatActivity {
+        public class Login extends AppCompatActivity {
 
-     Spinner cuentas;
+            Spinner cuentas;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_longui);
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+                super.onCreate(savedInstanceState);
+                setContentView(R.layout.activity_longui);
 
-        cuentas =(Spinner)findViewById(R.id.cuentas);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.cuentas, android.R.layout.simple_spinner_item);
-        cuentas.setAdapter(adapter);
-    }
+                cuentas =(Spinner)findViewById(R.id.cuentas);
+                ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                        R.array.cuentas, android.R.layout.simple_spinner_item);
+                cuentas.setAdapter(adapter);
+            }
 
-    public void Ingresar(View view) {
-        Intent intent=new Intent(this,Menu.class);
-        startActivity(intent);
-    }
+            public void Ingresar(View view) {
+                Intent intent=new Intent(this,Menu.class);
+                startActivity(intent);
+            }
 
 
-    public void Recupera_contraseña(View view) {
-        Intent intent=new Intent(this,Recuperara_Contrasena.class);
-        startActivity(intent);
-    }
+            public void Recuperar_contrasenia(View view) {
+                Intent intent=new Intent(this,Recuperar_Contrasenia.class);
+                startActivity(intent);
+            }
 }

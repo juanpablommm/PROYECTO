@@ -29,30 +29,13 @@
 
 
     <Button
-        android:id="@+id/Cambiar"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="250dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="28dp"
-        android:background="#77CFCFCF"
-        android:onClick="Recupera_contraseña"
-        android:text="@string/Recuperar_contraseña"
-        android:textColor="#000000"
-        android:textIsSelectable="true"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
-
-    <Button
         android:id="@+id/buttonIngresar"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="115dp"
         android:layout_height="33dp"
         android:layout_marginStart="136dp"
         android:layout_marginTop="30dp"
-        android:background="#FFFFFF"
+        android:background="#80FFFFFF"
         android:onClick="Ingresar"
         android:text="@string/Ingresar"
         android:textColor="#020202"
@@ -78,7 +61,7 @@
         android:layout_height="103dp"
         android:layout_marginStart="156dp"
         android:layout_marginTop="20dp"
-        android:background="#C8F9A825"
+        android:background="#00F9A825"
         android:src="@drawable/avatar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Titulo" />
@@ -128,6 +111,19 @@
         android:textColorHint="#050505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CampoUsuario" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="44dp"
+        android:background="#81FFFFFF"
+        android:onClick="Recuperar_contrasenia"
+        android:text="@string/Recuperar_contraseña"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
