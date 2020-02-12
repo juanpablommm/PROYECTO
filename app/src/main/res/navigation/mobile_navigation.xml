@@ -31,6 +31,16 @@
         android:name="com.example.proyectoinventario.ui.Registrar_Prestamo.Registrar_Prestamo"
         android:label="registrar_prestamo"
         tools:layout="@layout/registrar_prestamo" />
+    <fragment
+        android:id="@+id/registrar_Usuario"
+        android:name="com.example.proyectoinventario.ui.Registrar_Usuario"
+        android:label="fragment_registrar__usuario"
+        tools:layout="@layout/fragment_registrar__usuario" />
+    <fragment
+        android:id="@+id/registrar_Ambiente"
+        android:name="com.example.proyectoinventario.ui.Registrar_Ambiente.Registrar_Ambiente"
+        android:label="registrar_ambiente"
+        tools:layout="@layout/registrar_ambiente" />
 
 
 </navigation>

@@ -19,6 +19,22 @@
 
 
     </group>
+    <group android:checkableBehavior="single" android:id="@+id/groupcuentadante">
+        <item
+            android:id="@+id/registrar_Usuario"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Registrar Usuario"/>
+        <item
+            android:id="@+id/asignar_Inventario"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Asignar Inventario" />
+        <item
+            android:id="@+id/registrar_Ambiente"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Registrar Ambiente" />
+
+
+    </group>
 
     <item android:title="Communicate">
         <menu>

@@ -8,11 +8,16 @@
 
     <TextView
         android:id="@+id/titulo"
-        android:layout_width="138dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="136dp"
+        android:layout_width="232dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="43dp"
         android:layout_marginTop="32dp"
-        android:text="registre su prestamo"
+        android:layout_marginEnd="43dp"
+        android:text="Registre su Prestamo"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,22 +26,25 @@
         android:layout_width="109dp"
         android:layout_height="54dp"
         android:layout_marginStart="156dp"
-        android:layout_marginTop="515dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="146dp"
         android:text="registrar prestamo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+        app:layout_constraintTop_toBottomOf="@+id/botonModificar" />
 
     <EditText
         android:id="@+id/campoNombre"
         android:layout_width="88dp"
         android:layout_height="52dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="308dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="nombre"
+        app:layout_constraintEnd_toStartOf="@+id/campoCedula"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/campoCedula"
@@ -46,6 +54,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="cedula"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
         app:layout_constraintStart_toEndOf="@+id/campoNombre"
         app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
@@ -53,12 +62,12 @@
         android:id="@+id/campoProducto"
         android:layout_width="80dp"
         android:layout_height="52dp"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="244dp"
-        android:layout_marginEnd="112dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="producto"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
         app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
     <EditText
@@ -66,15 +75,15 @@
         android:layout_width="91dp"
         android:layout_height="52dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="299dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="5dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="cantidad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/campoProducto"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
     <Spinner
         android:id="@+id/spinner"
@@ -91,7 +100,7 @@
         android:layout_width="130dp"
         android:layout_height="52dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="8dp"
         android:text="crear solicitud"
         app:layout_constraintEnd_toStartOf="@+id/botonModificar"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,17 +110,21 @@
         android:id="@+id/botonModificar"
         android:layout_width="116dp"
         android:layout_height="52dp"
+        android:layout_marginTop="8dp"
         android:text="modificar solicitud"
+        app:layout_constraintEnd_toStartOf="@+id/botonEliminar"
         app:layout_constraintStart_toEndOf="@+id/botonCrear"
         app:layout_constraintTop_toBottomOf="@+id/campoCedula" />
 
     <Button
         android:id="@+id/botonEliminar"
-        android:layout_width="140dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="144dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
         android:text="eliminar solicitud"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toEndOf="@+id/botonModificar"
         app:layout_constraintTop_toBottomOf="@+id/campoProducto" />
 

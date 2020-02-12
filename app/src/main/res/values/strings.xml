@@ -11,6 +11,9 @@
     <string name="menu_home">Consultar</string>
     <string name="menu_gallery">Prestamo</string>
     <string name="menu_slideshow">Devolucion</string>
+    <string name="menu_usuario">Usuario</string>
+    <string name="menu_asignar_Inventario">Asignar_Inventario</string>
+    <string name="menu_consultar_Cuentadantes">consultar_Cuentadantes</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -35,4 +38,10 @@
     <string name="se">Serial</string>
     <string name="equi">equipo</string>
     <string name="ReActivo">Registrar Activos</string>
+    <string name="re">Registras</string>
+    <string name="Codi">Codigo</string>
+    <string name="Zon">Zona</string>
+    <string name="Regis">Registro</string>
+    <string name="Nom">Nombre</string>
+    <string name="ReAmbiente">Ambiente</string>
 </resources>
