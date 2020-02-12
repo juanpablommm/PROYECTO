@@ -23,7 +23,7 @@ public class Registrar_Prestamo extends Fragment {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.registrar_prestamo, container, false);
-        final TextView textView = root.findViewById(R.id.text_pre_1);
+        final TextView textView = root.findViewById(R.id.titulo);
         homeViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
