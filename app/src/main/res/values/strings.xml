@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PROYECTO INVENTARIO</string>
+    <string name="app_name">INVENTARIO</string>
     <string name="title_activity_menu">Menu</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -15,15 +15,16 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="Rol">Rol</string>
     <string name="Usuario">Usuario</string>
     <string name="Contraseña">Contraseña</string>
     <string name="Ingresar">Ingresar</string>
-    <string name="Recuperar_contraseña">Recuperar Contraseña</string>
     <string name="Ingresar_Usuario">Cedula Usuario</string>
     <string name="Ingresar_Contraseña">*****</string>
     <string name="Titulo">LOGIN</string>
     <string name="mensajeR">Ingrese su correo</string>
     <string name="Email">Honor@gmail.com</string>
     <string name="Enviar">Enviar</string>
+    <string name="Recuperar_contraseña">¿Olvidaste tu contraseña?</string>
+    <string name="Texto">Introduce tu correo electronico asociado a la cuenta</string>
+    <string name="Rol">Tipo cuenta</string>
 </resources>

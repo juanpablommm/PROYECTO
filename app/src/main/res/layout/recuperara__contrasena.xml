@@ -12,8 +12,8 @@
         android:id="@+id/Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="84dp"
         android:text="@string/Recuperar_contraseña"
         android:textColor="#FDFFFFFF"
         android:textIsSelectable="true"
@@ -24,29 +24,40 @@
 
     <EditText
         android:id="@+id/Email"
-        android:layout_width="366dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="411dp"
+        android:layout_height="28dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/Email"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textColorHint="#FD0A0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Text" />
+        app:layout_constraintTop_toBottomOf="@+id/mensaje1" />
 
     <Button
         android:id="@+id/enviar"
         android:layout_width="146dp"
         android:layout_height="58dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="108dp"
         android:backgroundTint="#F5F5F5"
         android:text="@string/Enviar"
         android:textColor="#FD030303"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <TextView
+        android:id="@+id/mensaje1"
+        android:layout_width="402dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="95dp"
+        android:text="@string/Texto"
+        android:textColor="#FCFFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text" />
 </androidx.constraintlayout.widget.ConstraintLayout>
