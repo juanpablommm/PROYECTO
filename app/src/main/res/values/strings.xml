@@ -29,4 +29,10 @@
     <string name="textV">¿Olvidaste tu contraseña?</string>
     <string name="IngresaCorre">Ingresa tu E-mail</string>
     <string name="EnviarN">Enviar</string>
+    <string name="Nombre_Cuentadante">Nombre</string>
+    <string name="Cantidad_Cuentadante">Cantidad</string>
+    <string name="Marca_cuentadante">Marca</string>
+    <string name="se">Serial</string>
+    <string name="equi">equipo</string>
+    <string name="ReActivo">Registrar Activos</string>
 </resources>
