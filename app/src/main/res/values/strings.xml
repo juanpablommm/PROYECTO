@@ -22,11 +22,11 @@
     <string name="Recuperar_contraseña">Recuperar Contraseña</string>
     <string name="Ingresar_Usuario">Cedula</string>
     <string name="Ingresar_Contraseña" />
-    <string name="Titulo">TITULO</string>
     <string name="Email">E-mail</string>
     <string name="Texto">Ingrase_E-mail</string>
     <string name="Enviar">Recuperar</string>
     <string name="textV">¿Olvidaste tu contraseña?</string>
     <string name="IngresaCorre">Ingresa tu E-mail</string>
     <string name="EnviarN">Enviar</string>
+    <string name="Titulo">Iniciar Sesion</string>
 </resources>
