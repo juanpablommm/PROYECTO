@@ -7,21 +7,30 @@
 
     <fragment
         android:id="@+id/Consultar_Inventario"
-        android:name="com.example.proyectoinventario.ui.Registrar_Prestamo.Registrar_Prestamo"
+        android:name="com.example.proyectoinventario.ui.Consultar_inventario.Consultar_inventario"
         android:label="@string/menu_home"
         tools:layout="@layout/consultar_inventario" />
 
     <fragment
-        android:id="@+id/Registrar_Devolucion"
-        android:name="com.example.proyectoinventario.ui.Registrar_Devolucion.Registrar_Devolucion"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/registrar_devolucion" />
-
-
+        android:id="@+id/asignar_Inventario"
+        android:name="com.example.proyectoinventario.ui.Asignar_Inventario.Asignar_Inventario"
+        android:label="asignar_inventario"
+        tools:layout="@layout/asignar_inventario" />
     <fragment
-        android:id="@+id/Registrar_Prestamo"
-        android:name="com.example.proyectoinventario.ui.Registrar_Activos.Registrar_Activos"
-        android:label="@layout/registrar_prestamo"
-        tools:layout="@layout/registrar_activos" />
+        android:id="@+id/consultar_Cuentadantes"
+        android:name="com.example.proyectoinventario.ui.Consultar_Cuentadantes"
+        android:label="fragment_consultar__cuentadantes"
+        tools:layout="@layout/fragment_consultar__cuentadantes" />
+    <fragment
+        android:id="@+id/registrar_Devolucion"
+        android:name="com.example.proyectoinventario.ui.Registrar_Devolucion.Registrar_Devolucion"
+        android:label="registrar_devolucion"
+        tools:layout="@layout/registrar_devolucion" />
+    <fragment
+        android:id="@+id/registrar_Prestamo"
+        android:name="com.example.proyectoinventario.ui.Registrar_Prestamo.Registrar_Prestamo"
+        android:label="registrar_prestamo"
+        tools:layout="@layout/registrar_prestamo" />
+
 
 </navigation>

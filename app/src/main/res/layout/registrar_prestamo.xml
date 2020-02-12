@@ -7,7 +7,7 @@
     tools:ignore="MissingDefaultResource">
 
     <TextView
-        android:id="@+id/text_pre_1"
+        android:id="@+id/titulo"
         android:layout_width="138dp"
         android:layout_height="23dp"
         android:layout_marginStart="136dp"
@@ -16,23 +16,103 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/text_pre_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="625dp"
-        android:layout_marginEnd="16dp"
-        android:text="realizar reporte"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_pre_1" />
-
     <Button
-        android:id="@+id/text_pre_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/botonregistrar"
+        android:layout_width="109dp"
+        android:layout_height="54dp"
         android:layout_marginStart="156dp"
         android:layout_marginTop="515dp"
-        android:text="registrar"
+        android:text="registrar prestamo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_pre_1" />
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <EditText
+        android:id="@+id/campoNombre"
+        android:layout_width="88dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="244dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <EditText
+        android:id="@+id/campoCedula"
+        android:layout_width="66dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="244dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="cedula"
+        app:layout_constraintStart_toEndOf="@+id/campoNombre"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <EditText
+        android:id="@+id/campoProducto"
+        android:layout_width="80dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="112dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="producto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <EditText
+        android:id="@+id/campoCantidad"
+        android:layout_width="91dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="299dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="cantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/campoProducto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="54dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="262dp"
+        app:layout_constraintEnd_toStartOf="@+id/campoProducto"
+        app:layout_constraintStart_toEndOf="@+id/campoCedula"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <Button
+        android:id="@+id/botonCrear"
+        android:layout_width="130dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:text="crear solicitud"
+        app:layout_constraintEnd_toStartOf="@+id/botonModificar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoNombre" />
+
+    <Button
+        android:id="@+id/botonModificar"
+        android:layout_width="116dp"
+        android:layout_height="52dp"
+        android:text="modificar solicitud"
+        app:layout_constraintStart_toEndOf="@+id/botonCrear"
+        app:layout_constraintTop_toBottomOf="@+id/campoCedula" />
+
+    <Button
+        android:id="@+id/botonEliminar"
+        android:layout_width="140dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="20dp"
+        android:text="eliminar solicitud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botonModificar"
+        app:layout_constraintTop_toBottomOf="@+id/campoProducto" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
