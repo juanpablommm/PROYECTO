@@ -3,17 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single" android:id="@+id/groupcoordina">
         <item
             android:id="@+id/Consultar_Inventario"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/Registrar_Devolucion"
+            android:id="@+id/registrar_Prestamo"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_gallery" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/registrar_Devolucion"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
 
