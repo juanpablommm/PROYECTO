@@ -4,120 +4,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Longui">
+    android:background="@drawable/inventario"
+    android:scrollbarStyle="insideInset"
+    tools:context=".Login">
 
-
-    <EditText
-        android:id="@+id/CampoContraseña"
-        android:layout_width="227dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="83dp"
-        android:background="#4F03A9F4"
-        android:ems="10"
-        android:hint="@string/Ingresar_Contraseña"
-        android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="371dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="81dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
-
-    <TextView
-        android:id="@+id/Usuario"
-        android:layout_width="227dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/Usuario"
-        android:textAllCaps="false"
-        android:textColor="#030303"
-        android:textIsSelectable="false"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SpinnerOpciones" />
 
     <TextView
         android:id="@+id/roles"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
         android:layout_width="227dp"
-        android:layout_height="31dp"
+        android:layout_height="32dp"
         android:layout_marginStart="83dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#00323435"
         android:text="@string/Rol"
+        android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="#030303"
-        android:textSize="24sp"
+        android:textColor="#F1EBEB"
+        android:textColorHighlight="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-    <Spinner
-        android:id="@+id/SpinnerOpciones"
-        android:layout_width="225dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="83dp"
-        android:background="#4F03A9F4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/roles" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="223dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/Contraseña"
-        android:textColor="#030303"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CampoUsuario" />
 
     <Button
-        android:id="@+id/buttonCambiar"
-        android:layout_width="228dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="24dp"
-        android:background="#4F03A9F4"
+        android:id="@+id/Cambiar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:background="#929E9D24"
         android:text="@string/Recuperar_contraseña"
-        android:textIsSelectable="false"
+        android:textColor="#000000"
+        android:textIsSelectable="true"
+        android:onClick="Recupera_contraseña"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
 
-
     <Button
         android:id="@+id/buttonIngresar"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="115dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="24dp"
-        android:background="#4F03A9F4"
+        android:layout_height="33dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFEB3B"
         android:onClick="Ingresar"
         android:text="@string/Ingresar"
+        android:textColor="#020202"
         android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CampoContraseña" />
+        app:layout_constraintTop_toBottomOf="@+id/Contraseña" />
+
+    <Spinner
+        android:id="@+id/cuentas"
+        android:layout_width="227dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="83dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roles" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="93dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="207dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/Titulo"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/CampoUsuario"
-        android:layout_width="227dp"
-        android:layout_height="31dp"
+        android:layout_width="223dp"
+        android:layout_height="45dp"
         android:layout_marginStart="83dp"
-        android:background="#4F03A9F4"
+        android:layout_marginTop="40dp"
+        android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/Ingresar_Usuario"
-        android:inputType="numberPassword"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColorHighlight="#AD1457"
+        android:textColorHint="#050505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Usuario" />
+        app:layout_constraintTop_toBottomOf="@+id/cuentas" />
+
+    <EditText
+        android:id="@+id/Contraseña"
+        android:layout_width="223dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="26dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/Contraseña"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#0F0F0F"
+        android:textColorHighlight="#AD1457"
+        android:textColorHint="#050505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CampoUsuario" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

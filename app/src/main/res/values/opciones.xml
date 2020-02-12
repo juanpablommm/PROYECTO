@@ -3,9 +3,8 @@
     <string-array name="cuentas">
 
         <item>Seleccione</item>
-        <item>Condinaroda</item>
-        <item>Aministrador</item>
+        <item>Coordinador</item>
+        <item>Administrador</item>
         <item>Cuentadante</item>
-
     </string-array>
 </resources>
