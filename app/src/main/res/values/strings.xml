@@ -22,4 +22,14 @@
     <string name="Recuperar_contraseña">Recuperar Contraseña</string>
     <string name="Ingresar_Usuario">Cedula</string>
     <string name="Ingresar_Contraseña" />
+
+
+
+    <string name="texview_devolucion">registrar devolucion</string>
+    <string name="edittex_devo">ingrese su id</string>
+    <string name="boton_crear">crear</string>
+    <string name="boton_actualizar">actualizar</string>
+    <string name="boton_reporte">reporte</string>
+    <string name="boton_eliminar">eliminar</string>
+
 </resources>
