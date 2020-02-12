@@ -2,20 +2,17 @@ package com.example.proyectoinventario;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Longui extends AppCompatActivity {
+public class Recuperar_Contrasenia extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_longui);
+        setContentView(R.layout.activity_recuperar__contrasenia);
     }
 
-    public void Ingresar(View view) {
-        Intent intent=new Intent(this,Menu.class);
-        startActivity(intent);
+    public void Enviar(View view) {
     }
 }
