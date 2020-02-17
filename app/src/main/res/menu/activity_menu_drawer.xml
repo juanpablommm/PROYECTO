@@ -3,40 +3,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single" android:id="@+id/groupcoordina">
+    <group android:checkableBehavior="single" android:id="@+id/grup_Cuentadante">
         <item
             android:id="@+id/Consultar_Inventario"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="@string/consultar_inventario" />
         <item
-            android:id="@+id/registrar_Prestamo"
+            android:id="@+id/Registrar_Prestamo"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="@string/registrar_prestamo" />
         <item
-            android:id="@+id/registrar_Devolucion"
+            android:id="@+id/Registrar_Devolucion"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/registrar_devolucion" />
 
 
     </group>
-    <group android:checkableBehavior="single" android:id="@+id/groupcuentadante">
+    <group android:checkableBehavior="single" android:id="@+id/grup_Administrador">
         <item
-            android:id="@+id/registrar_Usuario"
+            android:id="@+id/Registrar_Usuario"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Registrar Usuario"/>
+            android:title="@string/Registrar_Usuario"/>
         <item
             android:id="@+id/asignar_Inventario"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Asignar Inventario" />
+            android:title="@string/Asignar_Inventario" />
         <item
-            android:id="@+id/registrar_Ambiente"
+            android:id="@+id/Registrar_Ambiente"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Registrar Ambiente" />
+            android:title="@string/Registrar_Ambiente" />
+        <item
+            android:id="@+id/registrar_activos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/Registrar_Activos" />
+
+
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/grup_Coordinadora">
+        <item
+            android:id="@+id/Consultar_Cuentadantes"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/consultar_cuentadantes"/>
+
 
 
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/communicate">
         <menu>
 
 

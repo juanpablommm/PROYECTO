@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/Consultar_Inventario"
         android:name="com.example.proyectoinventario.ui.Consultar_inventario.Consultar_inventario"
-        android:label="@string/menu_home"
+        android:label="@string/consultar_inventario"
         tools:layout="@layout/consultar_inventario" />
 
     <fragment

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PROYECTO INVENTARIO</string>
+    <string name="app_name">Inventario Sena</string>
     <string name="title_activity_menu">Menu</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,9 +8,6 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Consultar</string>
-    <string name="menu_gallery">Prestamo</string>
-    <string name="menu_slideshow">Devolucion</string>
     <string name="menu_usuario">Usuario</string>
     <string name="menu_asignar_Inventario">Asignar_Inventario</string>
     <string name="menu_consultar_Cuentadantes">consultar_Cuentadantes</string>
@@ -25,7 +22,7 @@
     <string name="Recuperar_contraseña">Recuperar Contraseña</string>
     <string name="Ingresar_Usuario">Cedula</string>
     <string name="Ingresar_Contraseña" />
-    <string name="Titulo">TITULO</string>
+    <string name="Titulo">Login</string>
     <string name="Email">E-mail</string>
     <string name="Texto">Ingrase_E-mail</string>
     <string name="Enviar">Recuperar</string>
@@ -44,4 +41,17 @@
     <string name="Regis">Registro</string>
     <string name="Nom">Nombre</string>
     <string name="ReAmbiente">Ambiente</string>
+    <string name="Usuarios" />
+    <string name="R_Usuario">Registrar Usuario</string>
+    <string name="Registrar_Usuario">Registrar Usuario</string>
+    <string name="Asignar_Inventario">Asignar Inventario</string>
+    <string name="Registrar_Ambiente">Registrar Ambiente</string>
+    <string name="communicate">Communicate</string>
+    <string name="Registrar_Activos">Registrar Activos</string>
+    <string name="consultar_cuentadantes">Consultar Cuentadantes</string>
+    <string name="consultar_inventario">Consultar_Inventario</string>
+    <string name="registrar_prestamo">Registrar_Prestamo</string>
+    <string name="registrar_devolucion">Registrar_Devolucion</string>
+
+
 </resources>
