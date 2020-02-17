@@ -16,6 +16,7 @@
         android:layout_height="32dp"
         android:layout_marginStart="83dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="83dp"
         android:background="#00323435"
         android:text="@string/Rol"
         android:textAlignment="gravity"
@@ -24,6 +25,7 @@
         android:textColorHighlight="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -34,14 +36,16 @@
         android:layout_width="115dp"
         android:layout_height="33dp"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="30dp"
-        android:background="#80FFFFFF"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="136dp"
+        android:background="#6D1565C0"
         android:onClick="Ingresar"
         android:text="@string/Ingresar"
+        android:textAllCaps="false"
         android:textColor="#020202"
         android:textIsSelectable="false"
         android:textSize="18sp"
-        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Contraseña" />
 
@@ -50,8 +54,10 @@
         android:layout_width="227dp"
         android:layout_height="36dp"
         android:layout_marginStart="83dp"
+        android:layout_marginEnd="83dp"
         android:textAlignment="center"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/roles" />
 
@@ -59,10 +65,12 @@
         android:id="@+id/imageView3"
         android:layout_width="93dp"
         android:layout_height="103dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="136dp"
         android:background="#00F9A825"
         android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Titulo" />
 
@@ -72,10 +80,12 @@
         android:layout_height="44dp"
         android:layout_marginStart="96dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="96dp"
         android:text="@string/Titulo"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,6 +95,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="83dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="83dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/Ingresar_Usuario"
@@ -92,6 +103,7 @@
         android:textAlignment="center"
         android:textColorHighlight="#AD1457"
         android:textColorHint="#050505"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cuentas" />
 
@@ -101,6 +113,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="83dp"
         android:layout_marginTop="26dp"
+        android:layout_marginEnd="83dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="@string/Contraseña"
@@ -109,19 +122,26 @@
         android:textColor="#0F0F0F"
         android:textColorHighlight="#AD1457"
         android:textColorHint="#050505"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CampoUsuario" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Recuperar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="44dp"
-        android:background="#81FFFFFF"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="100dp"
+        android:background="#630277BD"
+        android:backgroundTint="#C6FFFFFF"
         android:onClick="Recuperar_contrasenia"
         android:text="@string/Recuperar_contraseña"
-        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
 

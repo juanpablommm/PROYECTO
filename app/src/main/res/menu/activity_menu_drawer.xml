@@ -43,7 +43,7 @@
         <item
             android:id="@+id/Consultar_Cuentadantes"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/Cantidad_Cuentadante"/>
+            android:title="@string/Consultar_Cuentadante"/>
 
 
 

@@ -48,9 +48,11 @@ public class Menu extends AppCompatActivity {
                 R.id.Consultar_Cuentadantes,R.id.Registrar_Activos)
                 .setDrawerLayout(drawer)
                 .build();
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
     }
 
 

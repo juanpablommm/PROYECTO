@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/Consultar_Inventario">
+    app:startDestination="@id/Consultar_Inventario">
 
     <fragment
         android:id="@+id/Consultar_Inventario"
@@ -41,6 +41,13 @@
         android:name="com.example.proyectoinventario.ui.Registrar_Ambiente.Registrar_Ambiente"
         android:label="registrar_ambiente"
         tools:layout="@layout/registrar_ambiente" />
+
+    <fragment
+        android:id="@+id/registrar_Activos"
+        android:name="com.example.proyectoinventario.ui.Registrar_Activos.Registrar_Activos"
+        android:label="registrar_activos"
+        tools:layout="@layout/registrar_activos" />
+
 
 
 </navigation>
