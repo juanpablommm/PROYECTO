@@ -15,7 +15,7 @@ import android.widget.Spinner;
             @Override
             protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_longui);
+                setContentView(R.layout.activity_login);
 
                 cuentas =(Spinner)findViewById(R.id.cuentas);
                 ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
