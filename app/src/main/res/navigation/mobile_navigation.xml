@@ -12,32 +12,32 @@
         tools:layout="@layout/consultar_inventario" />
 
     <fragment
-        android:id="@+id/asignar_Inventario"
+        android:id="@+id/Asignar_Inventario"
         android:name="com.example.proyectoinventario.ui.Asignar_Inventario.Asignar_Inventario"
         android:label="asignar_inventario"
         tools:layout="@layout/asignar_inventario" />
     <fragment
-        android:id="@+id/consultar_Cuentadantes"
+        android:id="@+id/Consultar_Cuentadantes"
         android:name="com.example.proyectoinventario.ui.Consultar_Cuentadantes"
-        android:label="fragment_consultar__cuentadantes"
+        android:label="fragment_Consultar__Cuentadantes"
         tools:layout="@layout/fragment_consultar__cuentadantes" />
     <fragment
-        android:id="@+id/registrar_Devolucion"
+        android:id="@+id/Registrar_Devolucion"
         android:name="com.example.proyectoinventario.ui.Registrar_Devolucion.Registrar_Devolucion"
         android:label="registrar_devolucion"
         tools:layout="@layout/registrar_devolucion" />
     <fragment
-        android:id="@+id/registrar_Prestamo"
+        android:id="@+id/Registrar_Prestamo"
         android:name="com.example.proyectoinventario.ui.Registrar_Prestamo.Registrar_Prestamo"
         android:label="registrar_prestamo"
         tools:layout="@layout/registrar_prestamo" />
     <fragment
-        android:id="@+id/registrar_Usuario"
+        android:id="@+id/Registrar_Usuario"
         android:name="com.example.proyectoinventario.ui.Registrar_Usuario"
         android:label="fragment_registrar__usuario"
         tools:layout="@layout/fragment_registrar__usuario" />
     <fragment
-        android:id="@+id/registrar_Ambiente"
+        android:id="@+id/Registrar_Ambiente"
         android:name="com.example.proyectoinventario.ui.Registrar_Ambiente.Registrar_Ambiente"
         android:label="registrar_ambiente"
         tools:layout="@layout/registrar_ambiente" />

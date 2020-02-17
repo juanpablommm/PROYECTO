@@ -25,7 +25,7 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/Registrar_Usuario"/>
         <item
-            android:id="@+id/asignar_Inventario"
+            android:id="@+id/Asignar_Inventario"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/Asignar_Inventario" />
         <item
@@ -33,7 +33,7 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/Registrar_Ambiente" />
         <item
-            android:id="@+id/registrar_activos"
+            android:id="@+id/Registrar_Activos"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/Registrar_Activos" />
 
@@ -43,7 +43,7 @@
         <item
             android:id="@+id/Consultar_Cuentadantes"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/consultar_cuentadantes"/>
+            android:title="@string/Cantidad_Cuentadante"/>
 
 
 
