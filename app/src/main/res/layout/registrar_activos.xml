@@ -6,145 +6,129 @@
     android:layout_height="match_parent"
     android:background="@drawable/cambia">
 
-    <TextView
-        android:id="@+id/text_share"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="166dp"
         android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Nombre_Activo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:text="@string/Nomb"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Cantidad_Activo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:text="@string/Cantidad_Activo"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Marca_Activo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:text="@string/Marca_cuentadante"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Serial_Activo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:text="@string/Serial_Activo"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/Spinner_Activo"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:backgroundTint="#9C27B0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/In_Nombre_Activo"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/In_Cantidad_Activo"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/In_Marca_Activo"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/In_Serial_Activo"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text="@string/Registrar_Activos_Bottom" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/Titulo_Registrar_Activos"
+        android:layout_width="412dp"
+        android:layout_height="42dp"
+        android:background="#2B2B2B"
+        android:text="@string/Titulo_Registrar_Activos"
         android:textAlignment="center"
-        android:textColor="#030303"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/ReActivo" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/Nombre_Cuentadante"
-        android:textColor="#030303"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_share" />
-
-    <EditText
-        android:id="@+id/editTextN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/Consultar_Cuentadante"
-        android:textColor="#030303"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextN" />
-
-    <EditText
-        android:id="@+id/editTextC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/Marca_cuentadante"
-        android:textColor="#030303"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextC" />
-
-    <EditText
-        android:id="@+id/editTextM"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/se"
-        android:textColor="#030303"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextM" />
-
-    <EditText
-        android:id="@+id/editTextS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/equi"
-        android:textColor="#030303"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextS" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="211dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <Button
-        android:id="@+id/buttonRegistar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="24dp"
-        android:text="@string/re"
+        android:textColor="#9C27B0"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="129dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo_Registrar_Activos"
+        app:srcCompat="@drawable/avatar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

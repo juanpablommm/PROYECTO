@@ -50,6 +50,10 @@
     <string name="registrar_prestamo">Registrar_Prestamo</string>
     <string name="registrar_devolucion">Registrar_Devolucion</string>
     <string name="action_settings">Cerrar Sesion</string>
+    <string name="Cantidad_Activo">Cantidad</string>
+    <string name="Serial_Activo">Serial</string>
+    <string name="Titulo_Registrar_Activos">Registrar Activos</string>
+    <string name="Registrar_Activos_Bottom">Registrar</string>
 
 
 </resources>
