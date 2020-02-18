@@ -42,9 +42,11 @@ public class Menu extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.Consultar_Inventario,R.id.Registrar_Prestamo,R.id.Registrar_Devolucion,
-                R.id.Registrar_Ambiente,R.id.Registrar_Usuario,R.id.Asignar_Inventario,
-                R.id.Consultar_Cuentadantes,R.id.Registrar_Activos,R.id.pantallaInicio)
+                R.id.pantallaInicio,R.id.ConsultarCuentadantes,
+                R.id.RegistrarUsuario,R.id.AsignarInventario,
+                R.id.RegistrarAmbiente,R.id.RegistrarActivos,
+                R.id.ConsultarInventario,R.id.RegistrarPrestamo,
+                R.id.RegistrarDevolucion)
                 .setDrawerLayout(drawer)
                 .build();
 

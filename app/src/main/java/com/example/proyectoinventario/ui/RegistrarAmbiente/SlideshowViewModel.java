@@ -1,16 +1,16 @@
-package com.example.proyectoinventario.ui.Registrar_Prestamo;
+package com.example.proyectoinventario.ui.RegistrarAmbiente;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class SlideshowViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public SlideshowViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is slideshow fragment");
     }
 
     public LiveData<String> getText() {

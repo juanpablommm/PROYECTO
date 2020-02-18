@@ -6,52 +6,52 @@
     app:startDestination="@id/pantallaInicio">
 
     <fragment
-        android:id="@+id/Consultar_Inventario"
-        android:name="com.example.proyectoinventario.ui.Consultar_inventario.Consultar_inventario"
-        android:label="@string/consultar_inventario"
+        android:id="@+id/ConsultarInventario"
+        android:name="com.example.proyectoinventario.ui.Consultarinventario.Consultarinventario"
+        android:label="Consultar Inventario"
         tools:layout="@layout/consultar_inventario" />
 
     <fragment
-        android:id="@+id/Asignar_Inventario"
-        android:name="com.example.proyectoinventario.ui.Asignar_Inventario.Asignar_Inventario"
-        android:label="asignar_inventario"
+        android:id="@+id/AsignarInventario"
+        android:name="com.example.proyectoinventario.ui.AsignarInventario.AsignarInventario"
+        android:label="Asignar Inventario"
         tools:layout="@layout/asignar_inventario" />
     <fragment
-        android:id="@+id/Consultar_Cuentadantes"
-        android:name="com.example.proyectoinventario.ui.Consultar_Cuentadantes"
-        android:label="fragment_Consultar__Cuentadantes"
+        android:id="@+id/ConsultarCuentadantes"
+        android:name="com.example.proyectoinventario.ui.ConsultarCuentadantes"
+        android:label="Consultar Cuentadantes"
         tools:layout="@layout/fragment_consultar__cuentadantes" />
     <fragment
-        android:id="@+id/Registrar_Devolucion"
-        android:name="com.example.proyectoinventario.ui.Registrar_Devolucion.Registrar_Devolucion"
-        android:label="registrar_devolucion"
+        android:id="@+id/RegistrarDevolucion"
+        android:name="com.example.proyectoinventario.ui.RegistrarDevolucion.RegistrarDevolucion"
+        android:label="Registrar Devolucion"
         tools:layout="@layout/registrar_devolucion" />
     <fragment
-        android:id="@+id/Registrar_Prestamo"
-        android:name="com.example.proyectoinventario.ui.Registrar_Prestamo.Registrar_Prestamo"
-        android:label="registrar_prestamo"
+        android:id="@+id/RegistrarPrestamo"
+        android:name="com.example.proyectoinventario.ui.RegistrarPrestamo.RegistrarPrestamo"
+        android:label="Registrar Prestamo"
         tools:layout="@layout/registrar_prestamo" />
     <fragment
-        android:id="@+id/Registrar_Usuario"
+        android:id="@+id/RegistrarUsuario"
         android:name="com.example.proyectoinventario.ui.Registrar_Usuario"
-        android:label="fragment_registrar__usuario"
+        android:label="Registrar Usuario"
         tools:layout="@layout/fragment_registrar__usuario" />
     <fragment
-        android:id="@+id/Registrar_Ambiente"
-        android:name="com.example.proyectoinventario.ui.Registrar_Ambiente.Registrar_Ambiente"
-        android:label="registrar_ambiente"
+        android:id="@+id/RegistrarAmbiente"
+        android:name="com.example.proyectoinventario.ui.RegistrarAmbiente.Registrar_Ambiente"
+        android:label="Registrar Ambiente"
         tools:layout="@layout/registrar_ambiente" />
 
     <fragment
-        android:id="@+id/registrar_Activos"
-        android:name="com.example.proyectoinventario.ui.Registrar_Activos.Registrar_Activos"
-        android:label="registrar_activos"
+        android:id="@+id/registrarActivos"
+        android:name="com.example.proyectoinventario.ui.RegistrarActivos.RegistrarActivos"
+        android:label="Registrar Activos"
         tools:layout="@layout/registrar_activos" />
     <fragment
         android:id="@+id/pantallaInicio"
         android:name="com.example.proyectoinventario.PantallaInicio"
-        android:label="fragment_pantalla_inicio"
-        tools:layout="@layout/fragment_pantalla_inicio" />
+        android:label="Pantalla Inicio"
+        tools:layout="@layout/pantalla_inicio" />
 
 
 </navigation>

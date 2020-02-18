@@ -24,7 +24,7 @@ public class PantallaViViewModel extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.pantalla_vi_view_model_fragment, container, false);
+        return inflater.inflate(R.layout.pantalla_viview_model, container, false);
     }
 
     @Override

@@ -1,7 +1,5 @@
 package com.example.proyectoinventario;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -66,7 +64,7 @@ public class PantallaInicio extends Fragment  {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pantalla_inicio, container, false);
+        return inflater.inflate(R.layout.pantalla_inicio, container, false);
     }
 
 
