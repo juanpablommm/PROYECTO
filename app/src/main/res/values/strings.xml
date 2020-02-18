@@ -13,7 +13,7 @@
 
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Bienvenido</string>
     <string name="Rol">Rol</string>
     <string name="Usuario">Usuario</string>
     <string name="Contraseña">Contraseña</string>
@@ -46,14 +46,15 @@
     <string name="Registrar_Ambiente">Registrar Ambiente</string>
     <string name="communicate">Communicate</string>
     <string name="Registrar_Activos">Registrar Activos</string>
-    <string name="consultar_inventario">Consultar_Inventario</string>
-    <string name="registrar_prestamo">Registrar_Prestamo</string>
-    <string name="registrar_devolucion">Registrar_Devolucion</string>
+    <string name="consultar_inventario">Consultar Inventario</string>
+    <string name="registrar_prestamo">Registrar Prestamo</string>
+    <string name="registrar_devolucion">Registrar Devolucion</string>
     <string name="action_settings">Cerrar Sesion</string>
     <string name="Cantidad_Activo">Cantidad</string>
     <string name="Serial_Activo">Serial</string>
     <string name="Titulo_Registrar_Activos">Registrar Activos</string>
     <string name="Registrar_Activos_Bottom">Registrar</string>
+    <string name="pantallainicio">Inicio</string>
 
 
 </resources>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/Consultar_Inventario">
+    app:startDestination="@id/pantallaInicio">
 
     <fragment
         android:id="@+id/Consultar_Inventario"
@@ -47,7 +47,11 @@
         android:name="com.example.proyectoinventario.ui.Registrar_Activos.Registrar_Activos"
         android:label="registrar_activos"
         tools:layout="@layout/registrar_activos" />
-
+    <fragment
+        android:id="@+id/pantallaInicio"
+        android:name="com.example.proyectoinventario.PantallaInicio"
+        android:label="fragment_pantalla_inicio"
+        tools:layout="@layout/fragment_pantalla_inicio" />
 
 
 </navigation>

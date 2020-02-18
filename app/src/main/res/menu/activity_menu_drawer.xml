@@ -44,7 +44,10 @@
             android:id="@+id/Consultar_Cuentadantes"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/Consultar_Cuentadante"/>
-
+        <item
+            android:id="@+id/pantallaInicio"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/pantallainicio"/>
 
 
     </group>
