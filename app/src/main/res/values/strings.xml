@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Inventario Sena</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Inventario Sena-La Samaria</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_usuario">Usuario</string>
+    <string name="menu_asignar_Inventario">Asignar_Inventario</string>
+    <string name="menu_consultar_Cuentadantes">consultar_Cuentadantes</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Bienvenido</string>
+    <string name="Rol">Rol</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="Recuperar_contraseña">Recuperar Contraseña</string>
+    <string name="Ingresar_Usuario">Cedula</string>
+    <string name="Ingresar_Contraseña" />
+    <string name="Titulo">Login</string>
+    <string name="Email">E-mail</string>
+    <string name="Texto">Ingrase_E-mail</string>
+    <string name="Enviar">Recuperar</string>
+    <string name="textV">¿Olvidaste tu contraseña?</string>
+    <string name="IngresaCorre">Ingresa tu E-mail</string>
+    <string name="EnviarN">Enviar</string>
+    <string name="Nombre_Cuentadante">Nombre</string>
+    <string name="Consultar_Cuentadante">Consultar Cuentadante</string>
+    <string name="Marca_cuentadante">Marca</string>
+    <string name="se">Serial</string>
+    <string name="equi">equipo</string>
+    <string name="re">Registras</string>
+    <string name="Codi">Codigo</string>
+    <string name="Zon">Zona</string>
+    <string name="Regis">Registro</string>
+    <string name="Nomb">Nombre</string>
+    <string name="RAmbiente">Ambiente</string>
+    <string name="Usuarios" />
+    <string name="R_Usuario">Crear Usuario</string>
+    <string name="Registrar_Usuario">Registrar Usuario</string>
+    <string name="Asignar_Inventario">Asignar Inventario</string>
+    <string name="Registrar_Ambiente">Registrar Ambiente</string>
+    <string name="communicate">Communicate</string>
+    <string name="Registrar_Activos">Registrar Activos</string>
+    <string name="consultar_inventario">Consultar Inventario</string>
+    <string name="registrar_prestamo">Registrar Prestamo</string>
+    <string name="registrar_devolucion">Registrar Devolucion</string>
+    <string name="action_settings">Cerrar Sesion</string>
+    <string name="Cantidad_Activo">Cantidad</string>
+    <string name="Serial_Activo">Serial</string>
+    <string name="Titulo_Registrar_Activos">Registrar Activos</string>
+    <string name="Registrar_Activos_Bottom">Registrar</string>
+    <string name="pantallainicio">Inicio</string>
+
+
+    <string name="btn_crear">CREAR</string>
+    <string name="btn_actualizar">ACTUALIZAR</string>
+    <string name="btn_reporte">REPORTE</string>
+    <string name="btn_eliminar">ELIMINAR</string>
+    <string name="edit_devo">Ingrese su Id</string>
+
+
+
+
+
+</resources>

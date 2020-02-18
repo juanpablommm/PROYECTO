@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" android:id="@+id/grup_Inicio">
+    <item
+        android:id="@+id/pantallaInicio"
+        android:icon="@drawable/inicio"
+        android:title="@string/pantallainicio"/>
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/grup_Coordinadora">
+        <item
+            android:id="@+id/ConsultarCuentadantes"
+            android:icon="@drawable/buscuenta"
+            android:title="@string/Consultar_Cuentadante"/>
+
+
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/grup_Administrador">
+        <item
+            android:id="@+id/RegistrarUsuario"
+            android:icon="@drawable/user"
+            android:title="@string/Registrar_Usuario"/>
+        <item
+            android:id="@+id/AsignarInventario"
+            android:icon="@drawable/formulario"
+            android:title="@string/Asignar_Inventario" />
+        <item
+            android:id="@+id/RegistrarAmbiente"
+            android:icon="@drawable/aula"
+            android:title="@string/Registrar_Ambiente" />
+        <item
+            android:id="@+id/RegistrarActivos"
+            android:icon="@drawable/pc"
+            android:title="@string/Registrar_Activos" />
+
+
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/grup_Cuentadante">
+        <item
+            android:id="@+id/ConsultarInventario"
+            android:icon="@drawable/lupa"
+            android:title="@string/consultar_inventario" />
+        <item
+            android:id="@+id/RegistrarPrestamo"
+            android:icon="@drawable/pres"
+            android:title="@string/registrar_prestamo" />
+        <item
+            android:id="@+id/RegistrarDevolucion"
+            android:icon="@drawable/devolver"
+            android:title="@string/registrar_devolucion" />
+
+
+    </group>
+
+
+
+    <item android:title="@string/communicate">
+        <menu>
+
+
+        </menu>
+    </item>
+
+</menu>

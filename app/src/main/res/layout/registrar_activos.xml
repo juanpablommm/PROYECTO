@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cambia">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Nombre_Activo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:text="@string/Nomb"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Cantidad_Activo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:text="@string/Cantidad_Activo"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Marca_Activo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:text="@string/Marca_cuentadante"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Serial_Activo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:text="@string/Serial_Activo"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/Spinner_Activo"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:backgroundTint="#9C27B0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/In_Nombre_Activo"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/In_Cantidad_Activo"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/In_Marca_Activo"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/In_Serial_Activo"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text="@string/Registrar_Activos_Bottom" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/Titulo_Registrar_Activos"
+        android:layout_width="412dp"
+        android:layout_height="42dp"
+        android:background="#2B2B2B"
+        android:text="@string/Titulo_Registrar_Activos"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="129dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo_Registrar_Activos"
+        app:srcCompat="@drawable/avatar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

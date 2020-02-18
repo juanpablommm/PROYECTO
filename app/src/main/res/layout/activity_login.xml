@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cambia"
+    android:scrollbarStyle="insideInset"
+    tools:context=".Login">
+
+
+    <TextView
+        android:id="@+id/roles"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="227dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="83dp"
+        android:background="#00323435"
+        android:text="@string/Rol"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        android:textColor="#F1EBEB"
+        android:textColorHighlight="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <Button
+        android:id="@+id/buttonIngresar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="115dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="136dp"
+        android:background="#6D1565C0"
+        android:onClick="Ingresar"
+        android:text="@string/Ingresar"
+        android:textAllCaps="false"
+        android:textColor="#020202"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Contraseña" />
+
+    <Spinner
+        android:id="@+id/cuentas"
+        android:layout_width="227dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="83dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roles" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="93dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="136dp"
+        android:background="#00F9A825"
+        android:src="@drawable/avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="207dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="96dp"
+        android:text="@string/Titulo"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/CampoUsuario"
+        android:layout_width="223dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="83dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/Ingresar_Usuario"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColorHighlight="#AD1457"
+        android:textColorHint="#050505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuentas" />
+
+    <EditText
+        android:id="@+id/Contraseña"
+        android:layout_width="223dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="83dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/Contraseña"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#0F0F0F"
+        android:textColorHighlight="#AD1457"
+        android:textColorHint="#050505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CampoUsuario" />
+
+    <TextView
+        android:id="@+id/Recuperar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="100dp"
+        android:background="#630277BD"
+        android:backgroundTint="#C6FFFFFF"
+        android:onClick="Recuperar_contrasenia"
+        android:text="@string/Recuperar_contraseña"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

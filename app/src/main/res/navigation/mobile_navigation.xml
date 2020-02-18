@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/pantallaInicio">
+
+    <fragment
+        android:id="@+id/ConsultarInventario"
+        android:name="com.example.proyectoinventario.ui.Consultarinventario.Consultarinventario"
+        android:label="Consultar Inventario"
+        tools:layout="@layout/consultar_inventario" />
+
+    <fragment
+        android:id="@+id/AsignarInventario"
+        android:name="com.example.proyectoinventario.ui.AsignarInventario.AsignarInventario"
+        android:label="Asignar Inventario"
+        tools:layout="@layout/asignar_inventario" />
+    <fragment
+        android:id="@+id/ConsultarCuentadantes"
+        android:name="com.example.proyectoinventario.ui.ConsultarCuentadantes"
+        android:label="Consultar Cuentadantes"
+        tools:layout="@layout/fragment_consultar__cuentadantes" />
+    <fragment
+        android:id="@+id/RegistrarDevolucion"
+        android:name="com.example.proyectoinventario.ui.RegistrarDevolucion.RegistrarDevolucion"
+        android:label="Registrar Devolucion"
+        tools:layout="@layout/registrar_devolucion" />
+    <fragment
+        android:id="@+id/RegistrarPrestamo"
+        android:name="com.example.proyectoinventario.ui.RegistrarPrestamo.RegistrarPrestamo"
+        android:label="Registrar Prestamo"
+        tools:layout="@layout/registrar_prestamo" />
+    <fragment
+        android:id="@+id/RegistrarUsuario"
+        android:name="com.example.proyectoinventario.ui.Registrar_Usuario"
+        android:label="Registrar Usuario"
+        tools:layout="@layout/fragment_registrar__usuario" />
+    <fragment
+        android:id="@+id/RegistrarAmbiente"
+        android:name="com.example.proyectoinventario.ui.RegistrarAmbiente.Registrar_Ambiente"
+        android:label="Registrar Ambiente"
+        tools:layout="@layout/registrar_ambiente" />
+
+    <fragment
+        android:id="@+id/registrarActivos"
+        android:name="com.example.proyectoinventario.ui.RegistrarActivos.RegistrarActivos"
+        android:label="Registrar Activos"
+        tools:layout="@layout/registrar_activos" />
+    <fragment
+        android:id="@+id/pantallaInicio"
+        android:name="com.example.proyectoinventario.PantallaInicio"
+        android:label="Pantalla Inicio"
+        tools:layout="@layout/pantalla_inicio" />
+
+
+</navigation>
