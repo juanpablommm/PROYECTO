@@ -57,4 +57,12 @@
     <string name="pantallainicio">Inicio</string>
 
 
+    <string name="btn_crear">CREAR</string>
+    <string name="btn_actualizar">ACTUALIZAR</string>
+    <string name="btn_reporte">REPORTE</string>
+    <string name="btn_eliminar">ELIMINAR</string>
+
+
+
+
 </resources>
