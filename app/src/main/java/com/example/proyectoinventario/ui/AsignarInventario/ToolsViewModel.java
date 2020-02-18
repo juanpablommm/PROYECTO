@@ -1,16 +1,16 @@
-package com.example.proyectoinventario.ui.Registrar_Devolucion;
+package com.example.proyectoinventario.ui.AsignarInventario;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class ToolsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public ToolsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is tools fragment");
     }
 
     public LiveData<String> getText() {

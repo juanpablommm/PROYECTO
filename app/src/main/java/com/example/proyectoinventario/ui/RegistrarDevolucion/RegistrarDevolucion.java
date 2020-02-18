@@ -1,4 +1,4 @@
-package com.example.proyectoinventario.ui.Consultar_inventario;
+package com.example.proyectoinventario.ui.RegistrarDevolucion;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.proyectoinventario.R;
 
-public class Consultar_inventario extends Fragment {
+public class RegistrarDevolucion extends Fragment {
 
-    private SendViewModel sendViewModel;
+    private GalleryViewModel galleryViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
-        View root = inflater.inflate(R.layout.consultar_inventario, container, false);
-        final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>() {
+        galleryViewModel =
+                ViewModelProviders.of(this).get(GalleryViewModel.class);
+        View root = inflater.inflate(R.layout.registrar_devolucion, container, false);
+        final TextView textView = root.findViewById(R.id.RegistrarDevolucion);
+        galleryViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

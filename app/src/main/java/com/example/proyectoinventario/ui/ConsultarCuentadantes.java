@@ -15,12 +15,12 @@ import com.example.proyectoinventario.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Consultar_Cuentadantes.OnFragmentInteractionListener} interface
+ * {@link ConsultarCuentadantes.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Consultar_Cuentadantes#newInstance} factory method to
+ * Use the {@link ConsultarCuentadantes#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Consultar_Cuentadantes extends Fragment {
+public class ConsultarCuentadantes extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -32,7 +32,7 @@ public class Consultar_Cuentadantes extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Consultar_Cuentadantes() {
+    public ConsultarCuentadantes() {
         // Required empty public constructor
     }
 
@@ -45,8 +45,8 @@ public class Consultar_Cuentadantes extends Fragment {
      * @return A new instance of fragment Consultar_Cuentadantes.
      */
     // TODO: Rename and change types and number of parameters
-    public static Consultar_Cuentadantes newInstance(String param1, String param2) {
-        Consultar_Cuentadantes fragment = new Consultar_Cuentadantes();
+    public static ConsultarCuentadantes newInstance(String param1, String param2) {
+        ConsultarCuentadantes fragment = new ConsultarCuentadantes();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

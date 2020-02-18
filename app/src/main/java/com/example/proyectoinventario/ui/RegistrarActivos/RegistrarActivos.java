@@ -1,10 +1,9 @@
-package com.example.proyectoinventario.ui.Registrar_Activos;
+package com.example.proyectoinventario.ui.RegistrarActivos;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -16,7 +15,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.proyectoinventario.R;
 
-public class Registrar_Activos extends Fragment {
+public class RegistrarActivos extends Fragment {
 
     private ShareViewModel shareViewModel;
 

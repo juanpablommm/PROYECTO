@@ -1,4 +1,4 @@
-package com.example.proyectoinventario.ui.Registrar_Activos;
+package com.example.proyectoinventario.ui.RegistrarActivos;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

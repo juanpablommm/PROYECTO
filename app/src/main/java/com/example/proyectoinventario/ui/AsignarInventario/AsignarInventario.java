@@ -1,4 +1,4 @@
-package com.example.proyectoinventario.ui.Asignar_Inventario;
+package com.example.proyectoinventario.ui.AsignarInventario;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.proyectoinventario.R;
 
-public class Asignar_Inventario extends Fragment {
+public class AsignarInventario extends Fragment {
 
     private ToolsViewModel toolsViewModel;
 
