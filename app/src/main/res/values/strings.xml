@@ -52,7 +52,6 @@
     <string name="action_settings">Cerrar Sesion</string>
     <string name="Cantidad_Activo">Cantidad</string>
     <string name="Serial_Activo">Serial</string>
-    <string name="Titulo_Registrar_Activos">Registrar Activos</string>
     <string name="Registrar_Activos_Bottom">Registrar</string>
     <string name="pantallainicio">Inicio</string>
 
@@ -62,9 +61,7 @@
     <string name="btn_reporte">REPORTE</string>
     <string name="btn_eliminar">ELIMINAR</string>
     <string name="edit_devo">Ingrese su Id</string>
-
-
-
+    <string name="registrar_activos">Registrar_Activos</string>
 
 
 </resources>

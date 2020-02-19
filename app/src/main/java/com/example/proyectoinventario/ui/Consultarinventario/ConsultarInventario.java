@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.proyectoinventario.R;
 
-public class Consultarinventario extends Fragment {
+public class ConsultarInventario extends Fragment {
 
     private SendViewModel sendViewModel;
 

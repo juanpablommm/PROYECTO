@@ -9,11 +9,9 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="166dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="404dp"
+        android:layout_height="434dp"
+        android:layout_marginTop="236dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -56,8 +54,8 @@
 
             <Spinner
                 android:id="@+id/Spinner_Activo"
-                android:layout_width="98dp"
-                android:layout_height="wrap_content"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
                 android:layout_span="1"
                 android:backgroundTint="#9C27B0" />
         </TableRow>
@@ -113,11 +111,11 @@
     </TableLayout>
 
     <TextView
-        android:id="@+id/Titulo_Registrar_Activos"
+        android:id="@+id/Registrar_Activos"
         android:layout_width="412dp"
         android:layout_height="42dp"
         android:background="#2B2B2B"
-        android:text="@string/Titulo_Registrar_Activos"
+        android:text="@string/registrar_activos"
         android:textAlignment="center"
         android:textColor="#9C27B0"
         android:textSize="18sp"
@@ -126,9 +124,11 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="129dp"
+        android:layout_width="153dp"
         android:layout_height="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Titulo_Registrar_Activos"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Registrar_Activos"
         app:srcCompat="@drawable/avatar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.proyectoinventario.R;
 
-public class Registrar_Ambiente extends Fragment {
+public class RegistrarAmbiente extends Fragment {
 
     private SlideshowViewModel slideshowViewModel;
 

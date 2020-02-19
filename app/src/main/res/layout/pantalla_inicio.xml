@@ -11,11 +11,9 @@
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/textView"
-        android:layout_width="243dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="72dp"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="80dp"
         android:text="@string/hello_blank_fragment"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -24,21 +22,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="409dp"
-        android:layout_height="712dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="250dp"
-        android:background="#2F1565C0"
-        android:src="@drawable/sena"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.417" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

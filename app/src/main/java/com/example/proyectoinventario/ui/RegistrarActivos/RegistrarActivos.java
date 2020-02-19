@@ -31,7 +31,7 @@ public class RegistrarActivos extends Fragment {
                 ViewModelProviders.of(this).get(ShareViewModel.class);
         View root = inflater.inflate(R.layout.registrar_activos, container, false);
         Spinner_Activo=(Spinner) root.findViewById(R.id.Spinner_Activo);
-        final TextView textView = root.findViewById(R.id.Titulo_Registrar_Activos);
+        final TextView textView = root.findViewById(R.id.RegistrarActivos);
         shareViewModel.getText().observe(this, new Observer<String>() {
 
 
