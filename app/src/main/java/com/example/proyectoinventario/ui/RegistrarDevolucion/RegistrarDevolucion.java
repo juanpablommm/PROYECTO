@@ -24,12 +24,7 @@ public class RegistrarDevolucion extends Fragment {
                 ViewModelProviders.of(this).get(GalleryViewModel.class);
         View root = inflater.inflate(R.layout.registrar_devolucion, container, false);
         final TextView textView = root.findViewById(R.id.RegistrarDevolucion);
-        galleryViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+
         return root;
     }
 }

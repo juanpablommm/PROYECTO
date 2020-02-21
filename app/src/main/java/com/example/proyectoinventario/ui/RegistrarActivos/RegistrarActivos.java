@@ -32,20 +32,7 @@ public class RegistrarActivos extends Fragment {
         View root = inflater.inflate(R.layout.registrar_activos, container, false);
         Spinner_Activo=(Spinner) root.findViewById(R.id.Spinner_Activo);
         final TextView textView = root.findViewById(R.id.RegistrarActivos);
-        shareViewModel.getText().observe(this, new Observer<String>() {
 
-
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-
-               // String [] inventario= {"Equipo","Material","Herramienta"};
-                //ArrayAdapter <String>adapter_inventario= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, inventario);
-                //Spinner_Activo.setAdapter(adapter_inventario);
-
-
-            }
-        });
         return root;
 
 
