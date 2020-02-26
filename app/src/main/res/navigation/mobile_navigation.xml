@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/ConsultarInventario"
-        android:name="com.example.proyectoinventario.ui.Consultarinventario.Consultarinventario"
+        android:name="com.example.proyectoinventario.ui.Consultarinventario.ConsultarInventario"
         android:label="Consultar Inventario"
         tools:layout="@layout/consultar_inventario" />
 
@@ -38,12 +38,12 @@
         tools:layout="@layout/fragment_registrar__usuario" />
     <fragment
         android:id="@+id/RegistrarAmbiente"
-        android:name="com.example.proyectoinventario.ui.RegistrarAmbiente.Registrar_Ambiente"
+        android:name="com.example.proyectoinventario.ui.RegistrarAmbiente.RegistrarAmbiente"
         android:label="Registrar Ambiente"
         tools:layout="@layout/registrar_ambiente" />
 
     <fragment
-        android:id="@+id/registrarActivos"
+        android:id="@+id/RegistrarActivos"
         android:name="com.example.proyectoinventario.ui.RegistrarActivos.RegistrarActivos"
         android:label="Registrar Activos"
         tools:layout="@layout/registrar_activos" />
