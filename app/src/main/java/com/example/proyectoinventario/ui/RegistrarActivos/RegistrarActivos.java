@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -39,5 +40,16 @@ public class RegistrarActivos extends Fragment {
 
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        Spinner_Activo = view.findViewById(R.id.Spinner_Activo);
 
+
+        String [] inventario= {"Equipo","Material","Herramienta"};
+        ArrayAdapter<String> adapter_inventario= new ArrayAdapter<String>(view.getContext(), android.R.layout.simple_spinner_dropdown_item, inventario);
+        Spinner_Activo.setAdapter(adapter_inventario);
+
+    }
 }
+

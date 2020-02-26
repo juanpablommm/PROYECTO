@@ -11,8 +11,9 @@
         android:id="@+id/tableLayout"
         android:layout_width="404dp"
         android:layout_height="434dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="180dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -23,7 +24,7 @@
             <TextView
                 android:id="@+id/Nombre_Activo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#9C27B0"
                 android:text="@string/Nomb"
                 android:textSize="18sp" />
@@ -67,7 +68,7 @@
             <EditText
                 android:id="@+id/In_Nombre_Activo"
                 android:layout_width="113dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_span="1"
                 android:ems="10"
                 android:inputType="textPersonName" />
