@@ -62,6 +62,10 @@
     <string name="btn_eliminar">ELIMINAR</string>
     <string name="edit_devo">Ingrese su Id</string>
     <string name="registrar_activos">Registrar_Activos</string>
+    <string name="nombre">nombre_prestamo</string>
+    <string name="pres_nom">nombre</string>
+    <string name="cedula_pres">cedula</string>
+    <string name="regis_prestamo">registrar prestamo</string>
 
 
 </resources>
