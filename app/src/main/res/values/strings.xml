@@ -60,8 +60,10 @@
     <string name="btn_actualizar">ACTUALIZAR</string>
     <string name="btn_reporte">REPORTE</string>
     <string name="btn_eliminar">ELIMINAR</string>
-    <string name="edit_devo">Ingrese su Id</string>
+    <string name="tx_devo_id">ingrese Id</string>
     <string name="registrar_activos">Registrar_Activos</string>
+    <string name="tx_devo_nombre">Nombre</string>
+    <string name="tx_devo_marca">Marca</string>
 
 
 </resources>

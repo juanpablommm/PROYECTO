@@ -17,59 +17,114 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
-        android:layout_width="410dp"
-        android:layout_height="88dp"
+        android:layout_width="411dp"
+        android:layout_height="73dp"
         android:layout_marginTop="228dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="41dp">
 
-            <EditText
-                android:id="@+id/edit_devo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:ems="10"
-                android:hint="@string/edit_devo"
-                android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/tx_devo_id"
+                android:layout_width="76dp"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:text="@string/tx_devo_id" />
+
+            <TextView
+                android:id="@+id/tx_devo_marca"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tx_devo_nombre" />
+
+            <TextView
+                android:id="@+id/tx_devo_nombre"
+                android:layout_width="116dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tx_devo_marca" />
+
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/btn_crear"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+            <EditText
+                android:id="@+id/edit_devo"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/btn_crear" />
+                android:ems="10"
+                android:inputType="textPersonName" />
 
-            <Button
-                android:id="@+id/btn_actualizar"
-                android:layout_width="17dp"
-                android:layout_height="wrap_content"
+            <EditText
+                android:id="@+id/edit_devo_nom"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/btn_actualizar" />
+                android:ems="10"
+                android:inputType="textPersonName" />
 
-            <Button
-                android:id="@+id/btn_reporte"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+            <EditText
+                android:id="@+id/edit_devo_marca"
+                android:layout_width="41dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/btn_reporte" />
-
-            <Button
-                android:id="@+id/btn_eliminar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/btn_eliminar" />
-
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="307dp"
+                tools:layout_editor_absoluteY="260dp" />
         </TableRow>
 
     </TableLayout>
+
+    <Button
+        android:id="@+id/btn_eliminar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="396dp"
+        android:layout_weight="1"
+        android:text="@string/btn_eliminar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_reporte"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="348dp"
+        android:layout_weight="1"
+        android:text="@string/btn_reporte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_crear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="300dp"
+        android:layout_weight="1"
+        android:text="@string/btn_crear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_actualizar"
+        android:layout_width="155dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="444dp"
+        android:layout_weight="1"
+        android:text="@string/btn_actualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
