@@ -67,6 +67,14 @@
     <string name="pres_nom">nombre</string>
     <string name="cedula_pres">Cedula</string>
     <string name="regis_prestamo">Registro_Pres</string>
+    <string name="Nombre_RPrestamo">Nombre</string>
+    <string name="RPrestamo">Serial</string>
+    <string name="Marca_RPrestamo">Marca</string>
+    <string name="Cantidad_RPrestamo">Cantidad</string>
+    <string name="bottom_RPrestamo">Registrar</string>
+    <string name="bottom_ReporteP">Reporte</string>
+    <string name="bottom_EditarP">Editar</string>
+    <string name="bottom_EliminarP">Eliminar</string>
 
 
 </resources>
