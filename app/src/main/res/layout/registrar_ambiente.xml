@@ -5,98 +5,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+  <TableLayout
+      android:id="@+id/tableLayout_Ambiente"
+      android:layout_width="412dp"
+      android:layout_height="123dp"
+      android:layout_marginTop="176dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scrollbarSize="@dimen/activity_vertical_margin">
+
+          <TextView
+              android:id="@+id/Nombre_Ambiente"
+              android:layout_width="144dp"
+              android:layout_height="match_parent"
+              android:background="#9C27B0"
+              android:text="@string/Nombre_Ambiente"
+              android:textSize="18sp" />
+
+          <TextView
+              android:id="@+id/Codigo_Ambiente"
+              android:layout_width="125dp"
+              android:layout_height="match_parent"
+              android:background="#9C27B0"
+              android:text="@string/Codigo_Ambiente"
+              android:textSize="18sp" />
+
+          <TextView
+              android:id="@+id/Zona_Ambiente"
+              android:layout_width="107dp"
+              android:layout_height="match_parent"
+              android:background="#9C27B0"
+              android:text="@string/Zona_Ambiente"
+              android:textSize="18sp" />
+
+      </TableRow>
+
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <EditText
+              android:id="@+id/In_Nombre_Ambiente"
+              android:layout_width="111dp"
+              android:layout_height="match_parent"
+              android:layout_span="1"
+              android:ems="10"
+              android:inputType="textPersonName" />
+
+          <EditText
+              android:id="@+id/in_Codigo_Ambiente"
+              android:layout_width="77dp"
+              android:layout_height="wrap_content"
+              android:layout_span="1"
+              android:ems="10"
+              android:inputType="number" />
+
+          <EditText
+              android:id="@+id/in_Zona_Ambiente"
+              android:layout_width="141dp"
+              android:layout_height="match_parent"
+              android:layout_span="1"
+              android:ems="10"
+              android:inputType="textPersonName" />
+
+      </TableRow>
+
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <Button
+              android:id="@+id/button_RAmbiente"
+              android:layout_width="95dp"
+              android:layout_height="match_parent"
+              android:text="@string/bottom_RPrestamo" />
+
+      </TableRow>
+
+  </TableLayout>
+
     <TextView
-        android:id="@+id/text_slideshow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/Registrar_Ambiente"
+        android:layout_width="412dp"
+        android:layout_height="42dp"
+        android:background="#2B2B2B"
+        android:text="@string/Registrar_Ambiente"
         android:textAlignment="center"
-        android:textColor="#030303"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/RAmbiente" />
-
-    <TextView
-        android:id="@+id/Recuperar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/Nomb"
-        android:textColor="#030303"
+        android:textColor="#9C27B0"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_slideshow" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextnom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Recuperar" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/Codi"
-        android:textColor="#030303"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextnom" />
-
-    <EditText
-        android:id="@+id/editTextcod"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+    <ImageView
+        android:id="@+id/imageView_Ambiente"
+        android:layout_width="153dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="240dp"
         android:layout_marginTop="12dp"
-        android:text="@string/Zon"
-        android:textColor="#030303"
-        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextcod" />
-
-    <EditText
-        android:id="@+id/editTextzon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/Regis"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextzon" />
+        app:layout_constraintTop_toBottomOf="@+id/Registrar_Ambiente"
+        app:srcCompat="@drawable/avatar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
