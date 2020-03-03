@@ -64,6 +64,9 @@
     <string name="registrar_activos">Registrar_Activos</string>
     <string name="tx_devo_nombre">Nombre</string>
     <string name="tx_devo_marca">Marca</string>
+    <string name="pres_nom">nombre</string>
+    <string name="cedula_pres">Cedula</string>
+    <string name="regis_prestamo">Registro_Pres</string>
 
 
 </resources>
