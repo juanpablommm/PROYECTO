@@ -13,13 +13,13 @@
 
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Bienvenido</string>
+    <string name="hello_blank_fragment">Consultas Cuentadantes</string>
     <string name="Rol">Rol</string>
     <string name="Usuario">Usuario</string>
     <string name="Contraseña">Contraseña</string>
     <string name="Ingresar">Ingresar</string>
     <string name="Recuperar_contraseña">Recuperar Contraseña</string>
-    <string name="Ingresar_Usuario">Cedula</string>
+    <string name="Ingresar_Usuario">E-mail</string>
     <string name="Ingresar_Contraseña" />
     <string name="Titulo">Login</string>
     <string name="Email">E-mail</string>
