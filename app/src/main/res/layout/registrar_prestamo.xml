@@ -7,59 +7,156 @@
     tools:ignore="MissingDefaultResource">
 
     <TableLayout
-        android:layout_width="413dp"
-        android:layout_height="226dp"
-        android:layout_marginTop="212dp"
+        android:id="@+id/tableLayout_RPrestamo"
+        android:layout_width="412dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="176dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:scrollbarSize="@dimen/activity_vertical_margin">
 
             <TextView
-                android:id="@+id/nombre_prestamo"
-                android:layout_width="62dp"
+                android:id="@+id/Nombre_RPrestamo"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/pres_nom" />
+                android:background="#9C27B0"
+                android:text="@string/Nombre_RPrestamo"
+                android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/cedula_prestamo"
+                android:id="@+id/Serial_RPrestamo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/cedula_pres" />
+                android:background="#9C27B0"
+                android:text="@string/RPrestamo"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Marca_RPrestamo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:text="@string/Marca_RPrestamo"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Cantidad_RPrestamo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:text="@string/Cantidad_RPrestamo"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/Spinner_RPrestamo"
+                android:layout_width="76dp"
+                android:layout_height="match_parent"
+                android:layout_span="1"
+                android:backgroundTint="#9C27B0" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/In_Nombre_Prestamo"
+                android:layout_width="111dp"
+                android:layout_height="match_parent"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/In_Cantidad_Prestamo"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/In_Marca_Prestamo"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/In_Serial_Prestamo"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/button_RPrestamo"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:text="@string/bottom_RPrestamo" />
+
+        </TableRow>
+
     </TableLayout>
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="54dp"
-        android:layout_height="17dp"
-        android:layout_marginTop="628dp"
-        android:layout_marginEnd="221dp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <TextView
+        android:id="@+id/Registrar_Prestamo"
+        android:layout_width="412dp"
+        android:layout_height="42dp"
+        android:background="#2B2B2B"
+        android:text="@string/registrar_prestamo"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/regis_prestamo"
+    <ImageView
+        android:id="@+id/imageView_RPrestamo"
+        android:layout_width="153dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Registrar_Prestamo"
+        app:srcCompat="@drawable/avatar" />
+
+    <Button
+        android:id="@+id/button_ReporteP"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bottom_ReporteP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout_RPrestamo" />
+
+    <Button
+        android:id="@+id/Editar_P"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="254dp"
-        android:text="@string/regis_prestamo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/bottom_EditarP"
+        app:layout_constraintStart_toEndOf="@+id/button_ReporteP"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout_RPrestamo" />
+
+    <Button
+        android:id="@+id/Eliminar_P"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/bottom_EliminarP"
+        app:layout_constraintStart_toEndOf="@+id/Editar_P"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout_RPrestamo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
