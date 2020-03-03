@@ -76,5 +76,12 @@
     <string name="bottom_EditarP">Editar</string>
     <string name="bottom_EliminarP">Eliminar</string>
 
+    <string name="tv_devo_nom">Nombre</string>
+    <string name="tv_devo_seri">Serial</string>
+    <string name="tv_devo_marca">Marca</string>
+    <string name="tv_devo_canti">Cantidad</string>
+    <string name="tv_devo_ele">Elemento</string>
+
+
 
 </resources>
