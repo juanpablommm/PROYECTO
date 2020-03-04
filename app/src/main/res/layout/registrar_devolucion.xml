@@ -7,11 +7,12 @@
     tools:ignore="MissingDefaultResource">
 
     <TextView
-        android:id="@+id/Registrar_Prestamo"
+        android:id="@+id/Registrar_Devolucion"
         android:layout_width="412dp"
         android:layout_height="42dp"
+        android:layout_marginTop="16dp"
         android:background=""
-        android:text="@string/registrar_prestamo"
+        android:text="@string/Registrar_Devolucion"
         android:textAlignment="center"
         android:textColor="#9C27B0"
         android:textSize="18sp"
@@ -25,7 +26,7 @@
         android:layout_marginStart="240dp"
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Registrar_Prestamo"
+        app:layout_constraintTop_toBottomOf="@+id/Registrar_Devolucion"
         app:srcCompat="@drawable/avatar" />
 
     <Button
