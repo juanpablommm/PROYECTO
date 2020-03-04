@@ -14,7 +14,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="@string/R_Usuario"
+        android:text="Registrar Usuario"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +28,7 @@
         android:layout_marginTop="150dp"
         android:layout_marginEnd="6dp"
         android:layout_marginBottom="129dp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/boton_agregar_usu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,25 +40,25 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/nombre_usu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nombre" />
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/apellido_usu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Apellido" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/cedula_usu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cedula" />
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/tel_usu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Telefono" />
@@ -71,7 +71,7 @@
 
             <EditText
                 android:id="@+id/Nombre_usu"
-                android:layout_width="93dp"
+                android:layout_width="94dp"
                 android:layout_height="match_parent"
                 android:ems="10"
                 android:inputType="textPersonName" />
@@ -109,7 +109,7 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/boton_agregar_usu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -117,11 +117,11 @@
         android:layout_marginBottom="269dp"
         android:text="Agregar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/boton_actu_usu"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/boton_actu_usu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -129,11 +129,11 @@
         android:layout_marginBottom="268dp"
         android:text="Actualizar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintStart_toEndOf="@+id/button3" />
+        app:layout_constraintEnd_toStartOf="@+id/boton_eliminar_usu"
+        app:layout_constraintStart_toEndOf="@+id/boton_agregar_usu" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/boton_eliminar_usu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
@@ -142,6 +142,6 @@
         android:text="Eliminar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button4" />
+        app:layout_constraintStart_toEndOf="@+id/boton_actu_usu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
