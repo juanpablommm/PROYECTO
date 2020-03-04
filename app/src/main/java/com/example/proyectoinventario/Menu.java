@@ -13,6 +13,8 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -22,6 +24,8 @@ import androidx.appcompat.widget.Toolbar;
 public class Menu extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    //variable firebase
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,9 +58,20 @@ public class Menu extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        // Initialize Firebase Auth
+        mAuth = FirebaseAuth.getInstance();
+
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        updateUI(currentUser);
+    }
 
+    private void updateUI(FirebaseUser user) {
+    }
 
     @Override
     public boolean onSupportNavigateUp() {

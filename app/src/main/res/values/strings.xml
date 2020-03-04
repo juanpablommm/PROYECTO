@@ -13,13 +13,13 @@
 
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Bienvenido</string>
+    <string name="hello_blank_fragment">Consultas Cuentadantes</string>
     <string name="Rol">Rol</string>
     <string name="Usuario">Usuario</string>
     <string name="Contraseña">Contraseña</string>
     <string name="Ingresar">Ingresar</string>
     <string name="Recuperar_contraseña">Recuperar Contraseña</string>
-    <string name="Ingresar_Usuario">Cedula</string>
+    <string name="Ingresar_Usuario">E-mail</string>
     <string name="Ingresar_Contraseña" />
     <string name="Titulo">Login</string>
     <string name="Email">E-mail</string>
@@ -75,6 +75,17 @@
     <string name="bottom_ReporteP">Reporte</string>
     <string name="bottom_EditarP">Editar</string>
     <string name="bottom_EliminarP">Eliminar</string>
+    <string name="Registrar_Ambiente">Registrar Ambiente</string>
+    <string name="Nombre_Ambiente">Nombre</string>
+    <string name="Codigo_Ambiente">Codigo</string>
+    <string name="Zona_Ambiente">Zona</string>
+
+    <string name="tv_devo_nom">Nombre</string>
+    <string name="tv_devo_seri">Serial</string>
+    <string name="tv_devo_marca">Marca</string>
+    <string name="tv_devo_canti">Cantidad</string>
+    <string name="tv_devo_ele">Elemento</string>
+
 
 
 </resources>

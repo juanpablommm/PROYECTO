@@ -7,124 +7,137 @@
     tools:ignore="MissingDefaultResource">
 
     <TextView
-        android:id="@+id/registro_devo"
+        android:id="@+id/Registrar_Prestamo"
+        android:layout_width="412dp"
+        android:layout_height="42dp"
+        android:background=""
+        android:text="@string/registrar_prestamo"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_RPrestamo"
+        android:layout_width="153dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Registrar_Prestamo"
+        app:srcCompat="@drawable/avatar" />
+
+    <Button
+        android:id="@+id/button_ReporteP"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/bottom_ReporteP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Eliminar_P"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="276dp"
+        android:text="@string/bottom_EliminarP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_RPrestamo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="44dp"
-        android:text="@string/registrar_devolucion"
+        android:layout_marginTop="276dp"
+        android:text="@string/bottom_RPrestamo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
-        android:layout_width="411dp"
-        android:layout_height="73dp"
-        android:layout_marginTop="228dp"
+        android:layout_width="410dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="204dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="41dp">
+            android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/tx_devo_id"
-                android:layout_width="76dp"
-                android:layout_height="27dp"
+                android:id="@+id/tv_devo_nom"
+                android:layout_width="10dp"
                 android:layout_weight="1"
-                android:text="@string/tx_devo_id" />
+                android:text="@string/tv_devo_nom" />
 
             <TextView
-                android:id="@+id/tx_devo_marca"
-                android:layout_width="78dp"
+                android:id="@+id/tv_devo_seri"
+                android:layout_width="17dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/tx_devo_nombre" />
+                android:text="@string/tv_devo_seri" />
 
             <TextView
-                android:id="@+id/tx_devo_nombre"
-                android:layout_width="116dp"
+                android:id="@+id/tv_devo_canti"
+                android:layout_width="17dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/tx_devo_marca" />
+                android:text="@string/tv_devo_canti" />
 
+            <TextView
+                android:id="@+id/tv_devo_marca"
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tv_devo_marca" />
+
+            <TextView
+                android:id="@+id/tv_devo_ele"
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tv_devo_ele" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/edit_devo"
-                android:layout_width="20dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/tx_devo_nombre"
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
 
-            <EditText
-                android:id="@+id/edit_devo_nom"
-                android:layout_width="54dp"
+            <TextView
+                android:id="@+id/tx_devo_serial"
+                android:layout_width="17dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName" />
+                android:layout_weight="1" />
 
-            <EditText
-                android:id="@+id/edit_devo_marca"
-                android:layout_width="41dp"
+            <TextView
+                android:id="@+id/tx_devo_cantidad"
+                android:layout_width="17dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName"
-                tools:layout_editor_absoluteX="307dp"
-                tools:layout_editor_absoluteY="260dp" />
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tx_devo_marca"
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tx_devo_elemento"
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
         </TableRow>
 
     </TableLayout>
-
-    <Button
-        android:id="@+id/btn_eliminar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="320dp"
-        android:layout_marginTop="396dp"
-        android:layout_weight="1"
-        android:text="@string/btn_eliminar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_reporte"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="320dp"
-        android:layout_marginTop="348dp"
-        android:layout_weight="1"
-        android:text="@string/btn_reporte"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_crear"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="320dp"
-        android:layout_marginTop="300dp"
-        android:layout_weight="1"
-        android:text="@string/btn_crear"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_actualizar"
-        android:layout_width="155dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="256dp"
-        android:layout_marginTop="444dp"
-        android:layout_weight="1"
-        android:text="@string/btn_actualizar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

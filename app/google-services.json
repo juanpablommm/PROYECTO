@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "507483829634",
-    "firebase_url": "https://proyecto-inventario-65fd7.firebaseio.com",
-    "project_id": "proyecto-inventario-65fd7",
-    "storage_bucket": "proyecto-inventario-65fd7.appspot.com"
+    "project_number": "462235295294",
+    "firebase_url": "https://appinvetario.firebaseio.com",
+    "project_id": "appinvetario",
+    "storage_bucket": "appinvetario.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:507483829634:android:e2182521ea81ee31624b9b",
+        "mobilesdk_app_id": "1:462235295294:android:de916f05015ced67e73b6f",
         "android_client_info": {
           "package_name": "com.example.proyectoinventario"
         }
       },
       "oauth_client": [
         {
-          "client_id": "507483829634-mcig2i70i0plqgaorru7ibjr00km3ugv.apps.googleusercontent.com",
+          "client_id": "462235295294-0qe3eokac2s0lb7gnklvtrluikp3qpuj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proyectoinventario",
+            "certificate_hash": "e1b07098b2dc3008812ea920e3641368f239870d"
+          }
+        },
+        {
+          "client_id": "462235295294-hhkpmutub71ias1ltdf6ppdk6n5lg7h1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAwLq3pNJVgxU1CUw7ZcV18Z20fbFbeww4"
+          "current_key": "AIzaSyDoqqQ3X5-hVXT76fkF_eoj8V1UZLTWhW4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "507483829634-mcig2i70i0plqgaorru7ibjr00km3ugv.apps.googleusercontent.com",
+              "client_id": "462235295294-hhkpmutub71ias1ltdf6ppdk6n5lg7h1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

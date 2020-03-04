@@ -7,7 +7,7 @@
     tools:ignore="MissingDefaultResource">
 
     <TableLayout
-        android:id="@+id/tableLayout_RPrestamo"
+        android:id="@+id/tableLayout_Ambiente"
         android:layout_width="412dp"
         android:layout_height="123dp"
         android:layout_marginTop="176dp"
@@ -22,7 +22,7 @@
             android:scrollbarSize="@dimen/activity_vertical_margin">
 
             <TextView
-                android:id="@+id/Nombre_RPrestamo"
+                android:id="@+id/Nombre_Ambiente"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="#9C27B0"
@@ -38,7 +38,7 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/Marca_RPrestamo"
+                android:id="@+id/Zona_Ambiente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#9C27B0"
@@ -46,7 +46,7 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/Cantidad_RPrestamo"
+                android:id="@+id/tv_devo_canti"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#9C27B0"
@@ -66,7 +66,7 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/In_Nombre_Prestamo"
+                android:id="@+id/In_Nombre_Ambiente"
                 android:layout_width="111dp"
                 android:layout_height="match_parent"
                 android:layout_span="1"
@@ -74,7 +74,7 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/In_Cantidad_Prestamo"
+                android:id="@+id/in_Codigo_Ambiente"
                 android:layout_width="77dp"
                 android:layout_height="wrap_content"
                 android:layout_span="1"
@@ -82,7 +82,7 @@
                 android:inputType="number" />
 
             <EditText
-                android:id="@+id/In_Marca_Prestamo"
+                android:id="@+id/in_Zona_Ambiente"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
                 android:layout_span="1"
@@ -103,7 +103,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button_RPrestamo"
+                android:id="@+id/button_RAmbiente"
                 android:layout_width="95dp"
                 android:layout_height="match_parent"
                 android:text="@string/bottom_RPrestamo" />
@@ -113,7 +113,7 @@
     </TableLayout>
 
     <TextView
-        android:id="@+id/Registrar_Prestamo"
+        android:id="@+id/Registrar_Ambiente"
         android:layout_width="412dp"
         android:layout_height="42dp"
         android:background="#2B2B2B"
@@ -125,13 +125,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView_RPrestamo"
+        android:id="@+id/imageView_Ambiente"
         android:layout_width="153dp"
         android:layout_height="100dp"
         android:layout_marginStart="240dp"
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Registrar_Prestamo"
+        app:layout_constraintTop_toBottomOf="@+id/Registrar_Ambiente"
         app:srcCompat="@drawable/avatar" />
 
     <Button
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
         android:text="@string/bottom_ReporteP"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout_RPrestamo" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout_Ambiente" />
 
     <Button
         android:id="@+id/Editar_P"
@@ -148,7 +148,7 @@
         android:layout_height="wrap_content"
         android:text="@string/bottom_EditarP"
         app:layout_constraintStart_toEndOf="@+id/button_ReporteP"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout_RPrestamo" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout_Ambiente" />
 
     <Button
         android:id="@+id/Eliminar_P"
@@ -157,6 +157,6 @@
         android:layout_marginTop="2dp"
         android:text="@string/bottom_EliminarP"
         app:layout_constraintStart_toEndOf="@+id/Editar_P"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout_RPrestamo" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout_Ambiente" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

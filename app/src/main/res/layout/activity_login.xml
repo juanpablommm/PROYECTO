@@ -9,27 +9,6 @@
     tools:context=".Login">
 
 
-    <TextView
-        android:id="@+id/roles"
-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
-        android:layout_width="227dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="83dp"
-        android:background="#00323435"
-        android:text="@string/Rol"
-        android:textAlignment="gravity"
-        android:textAllCaps="false"
-        android:textColor="#F1EBEB"
-        android:textColorHighlight="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-
     <Button
         android:id="@+id/buttonIngresar"
         style="@style/Widget.AppCompat.Button.Borderless"
@@ -49,24 +28,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Contraseña" />
 
-    <Spinner
-        android:id="@+id/cuentas"
-        android:layout_width="227dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="83dp"
-        android:layout_marginEnd="83dp"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/roles" />
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="93dp"
         android:layout_height="103dp"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="136dp"
         android:background="#00F9A825"
         android:src="@drawable/avatar"
@@ -94,7 +61,7 @@
         android:layout_width="223dp"
         android:layout_height="45dp"
         android:layout_marginStart="83dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="83dp"
         android:background="#FFFFFF"
         android:ems="10"
@@ -105,7 +72,7 @@
         android:textColorHint="#4F050505"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cuentas" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/Contraseña"

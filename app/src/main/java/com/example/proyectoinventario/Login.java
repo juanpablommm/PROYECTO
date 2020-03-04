@@ -10,17 +10,14 @@ import android.widget.Spinner;
 
         public class Login extends AppCompatActivity {
 
-            Spinner cuentas;
+
 
             @Override
             protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_login);
 
-                cuentas =(Spinner)findViewById(R.id.cuentas);
-                ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                        R.array.cuentas, android.R.layout.simple_spinner_item);
-                cuentas.setAdapter(adapter);
+
             }
 
             public void Ingresar(View view) {
