@@ -22,8 +22,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
-        android:layout_width="389dp"
-        android:layout_height="65dp"
+        android:layout_width="397dp"
+        android:layout_height="137dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="6dp"
@@ -92,7 +92,7 @@
 
             <EditText
                 android:id="@+id/Telefono_usu"
-                android:layout_width="110dp"
+                android:layout_width="75dp"
                 android:layout_height="match_parent"
                 android:ems="10"
                 android:inputType="textPersonName" />
@@ -101,11 +101,52 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/Correo_Usu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Correo_Usu" />
+
+            <TextView
+                android:id="@+id/Contraseña_usu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Contraseña_usu" />
+
+            <TextView
+                android:id="@+id/Rol_usu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Rol_usu" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="30dp" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/In_correo_usu"
+                android:layout_width="101dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/In_Contraseña_usu"
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/In_rol_usu"
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
     </TableLayout>
 
     <Button

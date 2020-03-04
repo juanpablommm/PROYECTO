@@ -93,6 +93,9 @@
     <string name="boton_enviarRD">Enviar</string>
     <string name="edit_reporte_rd">ingrese reporte</string>
     <string name="tx_reporte_rd">Reporte Devolucion</string>
+    <string name="Correo_Usu">Correo</string>
+    <string name="Contraseña_usu">Contraseña</string>
+    <string name="Rol_usu">Rol</string>
 
 
 </resources>
