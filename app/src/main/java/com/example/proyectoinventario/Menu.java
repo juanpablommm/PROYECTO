@@ -51,6 +51,7 @@ public class Menu extends AppCompatActivity {
                 R.id.RegistrarAmbiente,R.id.RegistrarActivos,
                 R.id.ConsultarInventario,R.id.RegistrarPrestamo,
                 R.id.RegistrarDevolucion)
+
                 .setDrawerLayout(drawer)
                 .build();
 

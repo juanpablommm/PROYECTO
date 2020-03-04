@@ -1,5 +1,6 @@
 package com.example.proyectoinventario.ui.RegistrarDevolucion;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +13,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.proyectoinventario.Menu;
 import com.example.proyectoinventario.R;
+
 
 public class RegistrarDevolucion extends Fragment {
 
@@ -26,5 +29,7 @@ public class RegistrarDevolucion extends Fragment {
         final TextView textView = root.findViewById(R.id.RegistrarDevolucion);
 
         return root;
+
     }
+
 }
