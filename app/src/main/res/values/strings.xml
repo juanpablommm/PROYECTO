@@ -75,7 +75,7 @@
     <string name="bottom_ReporteP">Reporte</string>
     <string name="bottom_EditarP">Editar</string>
     <string name="bottom_EliminarP">Eliminar</string>
-    <string name="Registrar_Ambiente">Registrar Ambiente</string>
+
     <string name="Nombre_Ambiente">Nombre</string>
     <string name="Codigo_Ambiente">Codigo</string>
     <string name="Zona_Ambiente">Zona</string>
