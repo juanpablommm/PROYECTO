@@ -87,5 +87,12 @@
     <string name="tv_devo_ele">Elemento</string>
     <string name="Registrar_Devolucion">Registrar Devolucion</string>
 
+    <string name="boton_EliminarD">Eliminar</string>
+    <string name="boton_registrarD">Registrar</string>
+    <string name="boton_ReporteD">Reporte</string>
+    <string name="boton_enviarRD">Enviar</string>
+    <string name="edit_reporte_rd">ingrese reporte</string>
+    <string name="tx_reporte_rd">Reporte Devolucion</string>
+
 
 </resources>

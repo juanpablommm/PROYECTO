@@ -2,38 +2,49 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
+    android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Registrar_Usuario" >
+    tools:context=".ActualizarUsuario">
+
 
     <TextView
         android:id="@+id/Actualizar_Usu"
-        android:layout_width="383dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="Registrar Usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="32dp"
+        android:text="Actualizar Usuario"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="307dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="139dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TableLayout
-        android:layout_width="389dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="129dp"
-        app:layout_constraintBottom_toTopOf="@+id/boton_agregar_usu"
+        android:layout_width="392dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="396dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Actualizar_Usu"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
@@ -62,41 +73,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Telefono" />
-
         </TableRow>
 
         <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/Nombre_usu"
-                android:layout_width="94dp"
+                android:layout_width="95dp"
                 android:layout_height="match_parent"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/Apellido_usu"
-                android:layout_width="96dp"
+                android:layout_width="97dp"
                 android:layout_height="match_parent"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/Documento_usu"
-                android:layout_width="89dp"
+                android:layout_width="98dp"
                 android:layout_height="match_parent"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/Telefono_usu"
-                android:layout_width="110dp"
+                android:layout_width="101dp"
                 android:layout_height="match_parent"
                 android:ems="10"
                 android:inputType="textPersonName" />
-
         </TableRow>
 
         <TableRow
@@ -105,20 +114,40 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="30dp" />
-    </TableLayout>
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/boton_agregar_usu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="280dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="340dp"
-        android:text="Agregar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="53dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
