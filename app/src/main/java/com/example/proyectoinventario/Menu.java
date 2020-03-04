@@ -60,7 +60,7 @@ public class Menu extends AppCompatActivity {
 
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
-
+    //lo
     }
 
     @Override
