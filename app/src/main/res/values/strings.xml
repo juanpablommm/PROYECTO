@@ -96,6 +96,15 @@
     <string name="Correo_Usu">Correo</string>
     <string name="Contraseña_usu">Contraseña</string>
     <string name="Rol_usu">Rol</string>
+    <string name="bt_eliminar_devo">Eliminar</string>
+
+
+    <string name="boton_eliminarpres">Eliminar</string>
+    <string name="fragment_cantidad_prestamo" />
+    <string name="fragment_cantidad_pres">cantidad</string>
+    <string name="fragment_marca_prest">marca</string>
+    <string name="fragment_serial_prest">serial</string>
+    <string name="fragment_nombre_prest">nombre</string>
 
 
 </resources>
