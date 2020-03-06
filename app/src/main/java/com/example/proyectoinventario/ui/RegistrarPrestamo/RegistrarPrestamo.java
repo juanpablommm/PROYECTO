@@ -32,4 +32,5 @@ public class RegistrarPrestamo extends Fragment {
         });
         return root;
     }
+
 }
