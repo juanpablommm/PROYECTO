@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "462235295294",
-    "firebase_url": "https://appinvetario.firebaseio.com",
-    "project_id": "appinvetario",
-    "storage_bucket": "appinvetario.appspot.com"
+    "project_number": "161599037600",
+    "firebase_url": "https://appinventario-eb37a.firebaseio.com",
+    "project_id": "appinventario-eb37a",
+    "storage_bucket": "appinventario-eb37a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:462235295294:android:de916f05015ced67e73b6f",
+        "mobilesdk_app_id": "1:161599037600:android:a6d951ab77ee3a4f5ba9c5",
         "android_client_info": {
           "package_name": "com.example.proyectoinventario"
         }
       },
       "oauth_client": [
         {
-          "client_id": "462235295294-0qe3eokac2s0lb7gnklvtrluikp3qpuj.apps.googleusercontent.com",
+          "client_id": "161599037600-s1qihn8r2nqragoakl698cgoep02v5og.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.proyectoinventario",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "462235295294-hhkpmutub71ias1ltdf6ppdk6n5lg7h1.apps.googleusercontent.com",
+          "client_id": "161599037600-r45glg9h1ed1p41svsb2f9a5cbfg802t.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDoqqQ3X5-hVXT76fkF_eoj8V1UZLTWhW4"
+          "current_key": "AIzaSyAFewhs_Bep1U_tFt4ACcEBqpfiE9uCExE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "462235295294-hhkpmutub71ias1ltdf6ppdk6n5lg7h1.apps.googleusercontent.com",
+              "client_id": "161599037600-r45glg9h1ed1p41svsb2f9a5cbfg802t.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

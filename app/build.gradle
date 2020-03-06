@@ -35,5 +35,4 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics:17.2.3'
 
 }
-apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'

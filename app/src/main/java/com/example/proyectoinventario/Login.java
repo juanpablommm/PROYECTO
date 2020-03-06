@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity {
                 setContentView(R.layout.activity_login);
                 inicializarViews();
                 // Initialize Firebase Auth
-                mAuth = FirebaseAuth.getInstance();
+                //mAuth = FirebaseAuth.getInstance();
 
 
             }
@@ -50,7 +50,7 @@ public class Login extends AppCompatActivity {
     }
 
             public void Ingresar(View view) {
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                //FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
                 String email = Email.getText().toString();
                 String password = Contraseña.getText().toString();
