@@ -63,7 +63,7 @@
                 android:text="@string/tv_devo_seri" />
 
             <TextView
-                android:id="@+id/tv_devo_canti"
+                android:id="@+id/fragment_prestamo_canti"
                 android:layout_width="17dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

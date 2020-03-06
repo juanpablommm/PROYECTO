@@ -21,7 +21,7 @@
           android:scrollbarSize="@dimen/activity_vertical_margin">
 
           <TextView
-              android:id="@+id/Nombre_Ambiente"
+              android:id="@+id/frag_Nombre_Ambiente"
               android:layout_width="144dp"
               android:layout_height="match_parent"
               android:background="#9C27B0"
@@ -37,7 +37,7 @@
               android:textSize="18sp" />
 
           <TextView
-              android:id="@+id/Zona_Ambiente"
+              android:id="@+id/fragment_zona_ambiente"
               android:layout_width="107dp"
               android:layout_height="match_parent"
               android:background="#9C27B0"
@@ -51,7 +51,7 @@
           android:layout_height="match_parent">
 
           <EditText
-              android:id="@+id/In_Nombre_Ambiente"
+              android:id="@+id/fragment_Nombre_Ambiente"
               android:layout_width="111dp"
               android:layout_height="match_parent"
               android:layout_span="1"
@@ -59,7 +59,7 @@
               android:inputType="textPersonName" />
 
           <EditText
-              android:id="@+id/in_Codigo_Ambiente"
+              android:id="@+id/fragment_Codigo_Ambiente"
               android:layout_width="77dp"
               android:layout_height="wrap_content"
               android:layout_span="1"
@@ -67,7 +67,7 @@
               android:inputType="number" />
 
           <EditText
-              android:id="@+id/in_Zona_Ambiente"
+              android:id="@+id/fragment_Zona_Ambiente"
               android:layout_width="141dp"
               android:layout_height="match_parent"
               android:layout_span="1"
@@ -81,7 +81,7 @@
           android:layout_height="match_parent">
 
           <Button
-              android:id="@+id/button_RAmbiente"
+              android:id="@+id/fragment_boton_eliminar"
               android:layout_width="95dp"
               android:layout_height="match_parent"
               android:text="@string/bottom_RPrestamo" />

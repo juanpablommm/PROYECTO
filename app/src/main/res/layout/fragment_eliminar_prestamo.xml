@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -106,32 +106,10 @@
                 android:id="@+id/fragment_boton_eliminar"
                 android:layout_width="95dp"
                 android:layout_height="match_parent"
-                android:text="@string/bottom_RPrestamo" />
+                tools:text="@string/boton_eliminarpres" />
 
         </TableRow>
 
     </TableLayout>
 
-    <TextView
-        android:id="@+id/Registrar_Ambiente"
-        android:layout_width="412dp"
-        android:layout_height="42dp"
-        android:background="#2B2B2B"
-        android:text="@string/registrar_prestamo"
-        android:textAlignment="center"
-        android:textColor="#6CB027"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView_Ambiente"
-        android:layout_width="153dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Registrar_Ambiente"
-        app:srcCompat="@drawable/avatar" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

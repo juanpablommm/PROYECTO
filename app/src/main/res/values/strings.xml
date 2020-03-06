@@ -97,5 +97,8 @@
     <string name="Contraseña_usu">Contraseña</string>
     <string name="Rol_usu">Rol</string>
 
+    <string name="boton_eliminarpres">Eliminar</string>
+
+
 
 </resources>
