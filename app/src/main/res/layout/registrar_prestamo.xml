@@ -25,7 +25,7 @@
                 android:id="@+id/Nombre_Ambiente"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="#9C27B0"
+                android:background="#03A9F4"
                 android:text="@string/Nombre_RPrestamo"
                 android:textSize="18sp" />
 
@@ -33,7 +33,7 @@
                 android:id="@+id/Serial_RPrestamo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#9C27B0"
+                android:background="#03A9F4"
                 android:text="@string/RPrestamo"
                 android:textSize="18sp" />
 
@@ -41,7 +41,7 @@
                 android:id="@+id/Zona_Ambiente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#9C27B0"
+                android:background="#03A9F4"
                 android:text="@string/Marca_RPrestamo"
                 android:textSize="18sp" />
 
@@ -49,7 +49,7 @@
                 android:id="@+id/tv_devo_canti"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#9C27B0"
+                android:background="#03A9F4"
                 android:text="@string/Cantidad_RPrestamo"
                 android:textSize="18sp" />
 
@@ -58,7 +58,7 @@
                 android:layout_width="76dp"
                 android:layout_height="match_parent"
                 android:layout_span="1"
-                android:backgroundTint="#9C27B0" />
+                android:backgroundTint="#03A9F4" />
         </TableRow>
 
         <TableRow
@@ -119,8 +119,8 @@
         android:background="#2B2B2B"
         android:text="@string/registrar_prestamo"
         android:textAlignment="center"
-        android:textColor="#9C27B0"
-        android:textSize="18sp"
+        android:textColor="#6CB027"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -128,35 +128,10 @@
         android:id="@+id/imageView_Ambiente"
         android:layout_width="153dp"
         android:layout_height="100dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Registrar_Ambiente"
         app:srcCompat="@drawable/avatar" />
-
-    <Button
-        android:id="@+id/button_ReporteP"
-        android:layout_width="139dp"
-        android:layout_height="wrap_content"
-        android:text="@string/bottom_ReporteP"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout_Ambiente" />
-
-    <Button
-        android:id="@+id/Editar_P"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bottom_EditarP"
-        app:layout_constraintStart_toEndOf="@+id/button_ReporteP"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout_Ambiente" />
-
-    <Button
-        android:id="@+id/Eliminar_P"
-        android:layout_width="120dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="2dp"
-        android:text="@string/bottom_EliminarP"
-        app:layout_constraintStart_toEndOf="@+id/Editar_P"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout_Ambiente" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
