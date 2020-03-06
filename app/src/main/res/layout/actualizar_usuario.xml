@@ -63,7 +63,7 @@
                 android:text="Apellido" />
 
             <TextView
-                android:id="@+id/cedula_usu"
+                android:id="@+id/Cedula_usu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cedula" />
