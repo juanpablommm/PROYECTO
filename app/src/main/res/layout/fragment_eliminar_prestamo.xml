@@ -26,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="#03A9F4"
-                android:text="@string/Nombre_RPrestamo"
+                android:text="@string/fragment_nombre_prest"
                 android:textSize="18sp" />
 
             <TextView
@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#03A9F4"
-                android:text="@string/RPrestamo"
+                android:text="@string/fragment_serial_prest"
                 android:textSize="18sp" />
 
             <TextView
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#03A9F4"
-                android:text="@string/Marca_RPrestamo"
+                android:text="@string/fragment_marca_prest"
                 android:textSize="18sp" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#03A9F4"
-                android:text="@string/Cantidad_RPrestamo"
+                android:text="@string/fragment_cantidad_pres"
                 android:textSize="18sp" />
 
             <Spinner
