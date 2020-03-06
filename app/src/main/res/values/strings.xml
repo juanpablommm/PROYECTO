@@ -96,6 +96,8 @@
     <string name="Correo_Usu">Correo</string>
     <string name="Contraseña_usu">Contraseña</string>
     <string name="Rol_usu">Rol</string>
+    <string name="bt_eliminar_devo">Eliminar</string>
+
 
     <string name="boton_eliminarpres">Eliminar</string>
 
