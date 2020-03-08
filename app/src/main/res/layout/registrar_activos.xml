@@ -103,7 +103,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button_Registrar_Activo"
                 android:layout_width="wrap_content"
                 android:layout_height="37dp"
                 android:text="@string/Registrar_Activos_Bottom" />
