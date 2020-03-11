@@ -36,7 +36,7 @@ public class Registrar_Usuario extends Fragment {
          EditText editTextCedula;
          EditText editTextTelefono;
          EditText editTextCorreo;
-         EditText editTextContraseña;
+         EditText editTextContrasena;
          EditText editTextRol;
          Button btnRegistrar;
 
@@ -51,7 +51,7 @@ public class Registrar_Usuario extends Fragment {
         editTextCedula= view.findViewById(R.id.Documento_usu);
         editTextTelefono=view.findViewById(R.id.Telefono_usu);
         editTextCorreo=view.findViewById(R.id.In_correo_usu);
-        editTextContraseña=view.findViewById(R.id.In_Contraseña_usu);
+        editTextContrasena=view.findViewById(R.id.In_Contraseña_usu);
         editTextRol=view.findViewById(R.id.In_rol_usu);
         btnRegistrar=view.findViewById(R.id.boton_agregar_usu);
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
@@ -62,11 +62,11 @@ public class Registrar_Usuario extends Fragment {
                 String Cedula = editTextCedula.getText().toString();
                 String Telefono = editTextTelefono.getText().toString();
                 String Correo = editTextCorreo.getText().toString();
-                String Contraseña = editTextContraseña.getText().toString();
+                String Contrasena = editTextContrasena.getText().toString();
                 String Rol = editTextRol.getText().toString();
 
                 //FirebaseAuth
-                mAuth.createUserWithEmailAndPassword(Correo, Contraseña)
+                mAuth.createUserWithEmailAndPassword(Correo, Contrasena)
                         .addOnCompleteListener((Executor) getContext(), new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -118,7 +118,7 @@ public class Registrar_Usuario extends Fragment {
     public void saveUser(View view) {
 
             String email = editTextCorreo.getText().toString();
-            String password = editTextContraseña.getText().toString();
+            String password = editTextContrasena.getText().toString();
 
             mAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener((Executor) this, new OnCompleteListener<AuthResult>() {
@@ -137,6 +137,7 @@ public class Registrar_Usuario extends Fragment {
 
                         }
                     });
+
 
 
         }

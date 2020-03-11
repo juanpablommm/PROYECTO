@@ -1,5 +1,6 @@
 package com.example.proyectoinventario.ui.RegistrarActivos;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -20,8 +21,11 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.proyectoinventario.Activos;
 import com.example.proyectoinventario.R;
+import com.example.proyectoinventario.Recuperar_Contrasenia;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.UUID;
 
 public class RegistrarActivos extends Fragment {
 
@@ -40,7 +44,7 @@ public class RegistrarActivos extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
 
                              ViewGroup container, Bundle savedInstanceState) {
-       // Activosdb= FirebaseDatabase.getInstance().getReference("Activos");
+        Activosdb= FirebaseDatabase.getInstance().getReference("Activos");
 
         shareViewModel =
                 ViewModelProviders.of(this).get(ShareViewModel.class);
@@ -52,11 +56,36 @@ public class RegistrarActivos extends Fragment {
         Serial_activo=(EditText)root.findViewById(R.id.In_Serial_Activo);
         Spinner_Activo=(Spinner) root.findViewById(R.id.Spinner_Activo);
         buttonRegistrar=(Button) root.findViewById(R.id.button_Registrar_Activo);
+
+        buttonRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String NombreActivo=Nombre_activo.getText().toString();
+                String CantidadActivo=Cantidad_activo.getText().toString();
+                String MarcaActivo=Marca_activo.getText().toString();
+                String SerialActivo=Serial_activo.getText().toString();
+
+                if (!TextUtils.isEmpty(NombreActivo)){
+                    String id= UUID.randomUUID().toString();
+                    Activos activos=new Activos(id,NombreActivo, CantidadActivo, MarcaActivo, SerialActivo);
+                    Activosdb.child(id).setValue(activos);
+                    Toast.makeText(getContext(),"Regisstro Exitoso",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    Toast.makeText(getContext(),"ingresar datos",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
         final TextView textView = root.findViewById(R.id.RegistrarActivos);
 
         return root;
 
 
+
+    }
+    /*public void Onclick(View v){
+        Intent intent=new Intent(getContext(),Recuperar_Contrasenia.class);
+        startActivity(intent);
 
     }
 
@@ -67,16 +96,16 @@ public class RegistrarActivos extends Fragment {
         String SerialActivo=Serial_activo.getText().toString();
 
         if (!TextUtils.isEmpty(NombreActivo)){
-            String id= Activosdb.push().getKey();
+            String id= UUID.randomUUID().toString();
             Activos activos=new Activos(id,NombreActivo, CantidadActivo, MarcaActivo, SerialActivo);
-            Activosdb.child("activos").child(id).setValue(activos);
+            Activosdb.child(id).setValue(activos);
             Toast.makeText(getContext(),"Regisstro Exitoso",Toast.LENGTH_SHORT).show();
         }
         else {
             Toast.makeText(getContext(),"ingresar datos",Toast.LENGTH_SHORT).show();
         }
 
-    }
+    }*/
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {

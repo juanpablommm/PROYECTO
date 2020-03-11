@@ -100,14 +100,14 @@
                 android:layout_width="89dp"
                 android:layout_height="match_parent"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="number" />
 
             <EditText
                 android:id="@+id/Telefono_usu"
                 android:layout_width="75dp"
                 android:layout_height="match_parent"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="number" />
 
         </TableRow>
 
@@ -183,5 +183,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
