@@ -10,13 +10,13 @@
         android:id="@+id/tableLayout_Ambiente"
         android:layout_width="396dp"
         android:layout_height="82dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="39dp"
         android:layout_marginBottom="44dp"
         app:layout_constraintBottom_toTopOf="@+id/fragment_boton_eliminar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/Registrar_Ambiente">
 
         <TableRow
             android:layout_width="match_parent"
@@ -89,7 +89,7 @@
         android:layout_width="412dp"
         android:layout_height="42dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="148dp"
         android:layout_marginEnd="1dp"
         android:background="#002B2B2B"
         android:text="@string/Registrar_Ambiente"
@@ -97,6 +97,7 @@
         android:textColor="#090909"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -106,11 +107,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="157dp"
+        android:layout_marginEnd="156dp"
         android:background="#9C0277BD"
         android:text="@string/bottom_RPrestamo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout_Ambiente" />
 
