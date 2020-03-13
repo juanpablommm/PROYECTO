@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/cambia"
     android:layout_height="match_parent"
     tools:ignore="MissingDefaultResource">
 
@@ -25,32 +26,36 @@
                 android:id="@+id/frag_Nombre_Ambiente"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="#03A9F4"
+                android:background="#0003A9F4"
                 android:text="@string/Nombre_RPrestamo"
+                android:textColor="#070707"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/fragment_serial_prestamo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#03A9F4"
+                android:background="#0003A9F4"
                 android:text="@string/RPrestamo"
+                android:textColor="#070707"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/fragment_zona_ambiente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#03A9F4"
+                android:background="#0003A9F4"
                 android:text="@string/Marca_RPrestamo"
+                android:textColor="#070707"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/fragment_prestamo_canti"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#03A9F4"
+                android:background="#0003A9F4"
                 android:text="@string/Cantidad_RPrestamo"
+                android:textColor="#070707"
                 android:textSize="18sp" />
 
             <Spinner
@@ -102,12 +107,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/fragment_boton_eliminar"
-                android:layout_width="95dp"
-                android:layout_height="match_parent"
-                android:text="@string/bottom_RPrestamo" />
-
         </TableRow>
 
     </TableLayout>
@@ -116,22 +115,25 @@
         android:id="@+id/Registrar_Ambiente"
         android:layout_width="412dp"
         android:layout_height="42dp"
-        android:background="#2B2B2B"
+        android:background="#002B2B2B"
         android:text="@string/registrar_prestamo"
         android:textAlignment="center"
-        android:textColor="#6CB027"
-        android:textSize="24sp"
+        android:textColor="#020202"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView_Ambiente"
-        android:layout_width="153dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="16dp"
+    <Button
+        android:id="@+id/fragment_boton_eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="157dp"
+        android:background="#9C0277BD"
+        android:text="@string/bottom_RPrestamo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Registrar_Ambiente"
-        app:srcCompat="@drawable/avatar" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout_Ambiente" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

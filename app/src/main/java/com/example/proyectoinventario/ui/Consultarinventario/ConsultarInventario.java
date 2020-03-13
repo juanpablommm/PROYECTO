@@ -23,7 +23,7 @@ public class ConsultarInventario extends Fragment {
         sendViewModel =
                 ViewModelProviders.of(this).get(SendViewModel.class);
         View root = inflater.inflate(R.layout.consultar_inventario, container, false);
-        final TextView textView = root.findViewById(R.id.textView2);
+        final TextView textView = root.findViewById(R.id.text_send);
         sendViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

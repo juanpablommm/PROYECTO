@@ -9,9 +9,11 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="404dp"
-        android:layout_height="434dp"
-        android:layout_marginTop="180dp"
+        android:layout_width="401dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,11 +108,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/button_Registrar_Activo"
-                android:layout_width="wrap_content"
-                android:layout_height="37dp"
-                android:text="@string/Registrar_Activos_Bottom" />
         </TableRow>
 
     </TableLayout>
@@ -119,13 +116,29 @@
         android:id="@+id/Registrar_Activos"
         android:layout_width="412dp"
         android:layout_height="42dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:background="#009C27B0"
         android:text="@string/registrar_activos"
         android:textAlignment="center"
         android:textColor="#090909"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_Registrar_Activo"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9C0277BD"
+        android:text="@string/Registrar_Activos_Bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

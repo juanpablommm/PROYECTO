@@ -2,13 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/cambia"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="@string/ConInv"
         android:textAlignment="textStart"
         android:textColor="#090909"
@@ -20,19 +22,22 @@
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="399dp"
-        android:layout_height="54dp"
+        android:layout_width="396dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/text_send" />
 
     <ListView
-        android:layout_width="409dp"
-        android:layout_height="652dp"
+        android:layout_width="391dp"
+        android:layout_height="564dp"
         android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="1dp"
+        android:background="#4DFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

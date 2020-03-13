@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/cambia"
     android:layout_height="match_parent"
     tools:ignore="MissingDefaultResource">
 
@@ -10,41 +11,35 @@
         android:id="@+id/Registrar_Devolucion"
         android:layout_width="412dp"
         android:layout_height="42dp"
-        android:layout_marginTop="16dp"
         android:text="@string/Registrar_Devolucion"
         android:textAlignment="center"
-        android:textColor="#9C27B0"
+        android:textColor="#090909"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView_RPrestamo"
-        android:layout_width="153dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Registrar_Devolucion"
-        app:srcCompat="@drawable/avatar" />
 
     <Button
         android:id="@+id/button_RegistroD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="612dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="173dp"
+        android:background="#9C0277BD"
         android:onClick="registra"
         android:text="@string/boton_registrarD"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/list_regis_devo" />
 
     <TableLayout
         android:id="@+id/tableLayout3"
         android:layout_width="412dp"
         android:layout_height="25dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="176dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/Registrar_Devolucion">
 
         <TableRow
             android:layout_width="match_parent"
@@ -54,35 +49,45 @@
                 android:id="@+id/tv_devo_nom"
                 android:layout_width="10dp"
                 android:layout_weight="1"
-                android:text="@string/tv_devo_nom" />
+                android:text="@string/tv_devo_nom"
+                android:textColor="#070707"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_devo_seri"
                 android:layout_width="17dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/tv_devo_seri" />
+                android:text="@string/tv_devo_seri"
+                android:textColor="#000000"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/fragment_prestamo_canti"
                 android:layout_width="17dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/tv_devo_canti" />
+                android:text="@string/tv_devo_canti"
+                android:textColor="#070707"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_devo_marca"
                 android:layout_width="17dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/tv_devo_marca" />
+                android:text="@string/tv_devo_marca"
+                android:textColor="#050505"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_devo_ele"
                 android:layout_width="17dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/tv_devo_ele" />
+                android:text="@string/tv_devo_ele"
+                android:textColor="#090909"
+                android:textSize="18sp" />
         </TableRow>
 
     </TableLayout>
@@ -91,6 +96,7 @@
         android:id="@+id/list_regis_devo"
         android:layout_width="408dp"
         android:layout_height="190dp"
+        android:background="#43FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
 

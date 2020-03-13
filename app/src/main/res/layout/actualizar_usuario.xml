@@ -32,6 +32,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
+        android:background="#9C0277BD"
         android:text="@string/Bott"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -56,13 +57,17 @@
                 android:id="@+id/nombre_usu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre" />
+                android:text="Nombre"
+                android:textColor="#090909"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/apellido_usu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Apellido" />
+                android:text="Apellido"
+                android:textColor="#090909"
+                android:textSize="18sp" />
 
         </TableRow>
 
@@ -94,7 +99,9 @@
                 android:id="@+id/Cedula_usu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cedula" />
+                android:text="Cedula"
+                android:textColor="#090909"
+                android:textSize="18sp" />
         </TableRow>
 
         <TableRow
@@ -117,13 +124,17 @@
                 android:id="@+id/tel_usu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telefono" />
+                android:text="Telefono"
+                android:textColor="#090909"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textEma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/CorreoU" />
+                android:text="@string/CorreoU"
+                android:textColor="#090909"
+                android:textSize="18sp" />
 
         </TableRow>
 
