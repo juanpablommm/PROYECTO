@@ -31,12 +31,12 @@ public class Registrar_Usuario extends Fragment {
 
         private EditText editTextNombre;
         private EditText editTextApellido;
-    private EditText editTextCedula;
-    private EditText editTextTelefono;
-    private EditText editTextCorreo;
-    private EditText editTextContrasena;
-    private EditText editTextRol;
-    private Button btnRegistrar;
+        private EditText editTextCedula;
+        private EditText editTextTelefono;
+        private EditText editTextCorreo;
+        private EditText editTextContrasena;
+        private EditText editTextRol;
+        private Button btnRegistrar;
 
     @Override
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
@@ -144,6 +144,4 @@ public class Registrar_Usuario extends Fragment {
         }
 
     }
-
-
 

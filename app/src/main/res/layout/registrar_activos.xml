@@ -25,32 +25,36 @@
                 android:id="@+id/Nombre_Activo"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="#9C27B0"
+                android:background="#02F1EFF1"
                 android:text="@string/Nomb"
+                android:textColor="#090909"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/Cantidad_Activo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#9C27B0"
+                android:background="#009C27B0"
                 android:text="@string/Cantidad_Activo"
+                android:textColor="#090909"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/Marca_Activo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#9C27B0"
+                android:background="#009C27B0"
                 android:text="@string/Marca_cuentadante"
+                android:textColor="#090909"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/Serial_Activo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#9C27B0"
+                android:background="#009C27B0"
                 android:text="@string/Serial_Activo"
+                android:textColor="#090909"
                 android:textSize="18sp" />
 
             <Spinner
@@ -115,21 +119,13 @@
         android:id="@+id/Registrar_Activos"
         android:layout_width="412dp"
         android:layout_height="42dp"
-        android:background="#2B2B2B"
+        android:layout_marginTop="30dp"
+        android:background="#009C27B0"
         android:text="@string/registrar_activos"
         android:textAlignment="center"
-        android:textColor="#9C27B0"
+        android:textColor="#090909"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="153dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Registrar_Activos"
-        app:srcCompat="@drawable/avatar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

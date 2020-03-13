@@ -3,113 +3,115 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/cambia"
     android:layout_height="match_parent">
 
-  <TableLayout
-      android:id="@+id/tableLayout_Ambiente"
-      android:layout_width="412dp"
-      android:layout_height="123dp"
-      android:layout_marginTop="176dp"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="1.0"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent">
+    <TableLayout
+        android:id="@+id/tableLayout_Ambiente"
+        android:layout_width="396dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_boton_eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-      <TableRow
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:scrollbarSize="@dimen/activity_vertical_margin">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="@dimen/activity_vertical_margin">
 
-          <TextView
-              android:id="@+id/frag_Nombre_Ambiente"
-              android:layout_width="144dp"
-              android:layout_height="match_parent"
-              android:background="#9C27B0"
-              android:text="@string/Nombre_Ambiente"
-              android:textSize="18sp" />
+            <TextView
+                android:id="@+id/frag_Nombre_Ambiente"
+                android:layout_width="144dp"
+                android:layout_height="match_parent"
+                android:background="#009C27B0"
+                android:text="@string/Nombre_Ambiente"
+                android:textColor="#090909"
+                android:textSize="18sp" />
 
-          <TextView
-              android:id="@+id/Codigo_Ambiente"
-              android:layout_width="125dp"
-              android:layout_height="match_parent"
-              android:background="#9C27B0"
-              android:text="@string/Codigo_Ambiente"
-              android:textSize="18sp" />
+            <TextView
+                android:id="@+id/Codigo_Ambiente"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:background="#009C27B0"
+                android:text="@string/Codigo_Ambiente"
+                android:textColor="#090909"
+                android:textSize="18sp" />
 
-          <TextView
-              android:id="@+id/fragment_zona_ambiente"
-              android:layout_width="107dp"
-              android:layout_height="match_parent"
-              android:background="#9C27B0"
-              android:text="@string/Zona_Ambiente"
-              android:textSize="18sp" />
+            <TextView
+                android:id="@+id/fragment_zona_ambiente"
+                android:layout_width="107dp"
+                android:layout_height="match_parent"
+                android:background="#009C27B0"
+                android:text="@string/Zona_Ambiente"
+                android:textColor="#090909"
+                android:textSize="18sp" />
 
-      </TableRow>
+        </TableRow>
 
-      <TableRow
-          android:layout_width="match_parent"
-          android:layout_height="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-          <EditText
-              android:id="@+id/fragment_Nombre_Ambiente"
-              android:layout_width="111dp"
-              android:layout_height="match_parent"
-              android:layout_span="1"
-              android:ems="10"
-              android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/fragment_Nombre_Ambiente"
+                android:layout_width="111dp"
+                android:layout_height="match_parent"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
 
-          <EditText
-              android:id="@+id/fragment_Codigo_Ambiente"
-              android:layout_width="77dp"
-              android:layout_height="wrap_content"
-              android:layout_span="1"
-              android:ems="10"
-              android:inputType="number" />
+            <EditText
+                android:id="@+id/fragment_Codigo_Ambiente"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="number" />
 
-          <EditText
-              android:id="@+id/fragment_Zona_Ambiente"
-              android:layout_width="141dp"
-              android:layout_height="match_parent"
-              android:layout_span="1"
-              android:ems="10"
-              android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/fragment_Zona_Ambiente"
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
 
-      </TableRow>
+        </TableRow>
 
-      <TableRow
-          android:layout_width="match_parent"
-          android:layout_height="match_parent">
-
-          <Button
-              android:id="@+id/fragment_boton_eliminar"
-              android:layout_width="95dp"
-              android:layout_height="match_parent"
-              android:text="@string/bottom_RPrestamo" />
-
-      </TableRow>
-
-  </TableLayout>
+    </TableLayout>
 
     <TextView
         android:id="@+id/Registrar_Ambiente"
         android:layout_width="412dp"
         android:layout_height="42dp"
-        android:background="#2B2B2B"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="1dp"
+        android:background="#002B2B2B"
         android:text="@string/Registrar_Ambiente"
         android:textAlignment="center"
-        android:textColor="#9C27B0"
+        android:textColor="#090909"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView_Ambiente"
-        android:layout_width="153dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="12dp"
+    <Button
+        android:id="@+id/fragment_boton_eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="157dp"
+        android:background="#9C0277BD"
+        android:text="@string/bottom_RPrestamo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Registrar_Ambiente"
-        app:srcCompat="@drawable/avatar" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout_Ambiente" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
