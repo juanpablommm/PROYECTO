@@ -87,7 +87,7 @@ public class Registrar_Usuario extends Fragment {
 
                 //FirebaseDatabase
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("usuarios");
+                DatabaseReference myRef = database.getReference("Usuarios");
 
 
 
