@@ -117,7 +117,6 @@
         android:layout_width="412dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="104dp"
         android:layout_marginEnd="8dp"
         android:background="#009C27B0"
         android:text="@string/registrar_activos"
