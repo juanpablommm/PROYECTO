@@ -82,7 +82,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/Nombre_usu"
+                android:id="@+id/Nombre_usuario"
                 android:layout_width="94dp"
                 android:layout_height="match_parent"
                 android:ems="10"
@@ -146,7 +146,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/In_correo_usu"
+                android:id="@+id/In_correo_usuario"
                 android:layout_width="101dp"
                 android:layout_height="match_parent"
                 android:ems="10"

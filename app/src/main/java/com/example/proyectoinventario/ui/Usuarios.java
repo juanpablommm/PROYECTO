@@ -11,13 +11,33 @@ public class Usuarios {
     private String Correo_Usuario;
     private String Contrasena_Usuario;
     private String Rol_Usuario;
+    private String idUsuario;
+
+    public Usuarios(String nombre_Usuario, String apellido_Usuario, String cedula_Usuario, String telefono_Usuario, String correo_Usuario, String contrasena_Usuario, String rol_Usuario, String idUsuario) {
+        Nombre_Usuario = nombre_Usuario;
+        Apellido_Usuario = apellido_Usuario;
+        Cedula_Usuario = cedula_Usuario;
+        Telefono_Usuario = telefono_Usuario;
+        Correo_Usuario = correo_Usuario;
+        Contrasena_Usuario = contrasena_Usuario;
+        Rol_Usuario = rol_Usuario;
+        this.idUsuario = idUsuario;
+    }
+
+    public String getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(String idUsuario) {
+        this.idUsuario = idUsuario;
+    }
 
     public String getNombre_Usuario() {
         return Nombre_Usuario;
     }
 
-    public void setNombre_Usuario(String nombre_usuario) {
-        Nombre_Usuario = Nombre_Usuario;
+    public void setNombre_Usuario(String nombre_Usuario) {
+        Nombre_Usuario = nombre_Usuario;
     }
 
     public String getApellido_Usuario() {
@@ -25,7 +45,7 @@ public class Usuarios {
     }
 
     public void setApellido_Usuario(String apellido_Usuario) {
-        this.Apellido_Usuario = Apellido_Usuario;
+        Apellido_Usuario = apellido_Usuario;
     }
 
     public String getCedula_Usuario() {
@@ -33,7 +53,7 @@ public class Usuarios {
     }
 
     public void setCedula_Usuario(String cedula_Usuario) {
-        this.Cedula_Usuario = Cedula_Usuario;
+        Cedula_Usuario = cedula_Usuario;
     }
 
     public String getTelefono_Usuario() {
@@ -41,7 +61,7 @@ public class Usuarios {
     }
 
     public void setTelefono_Usuario(String telefono_Usuario) {
-        this.Telefono_Usuario = telefono_Usuario;
+        Telefono_Usuario = telefono_Usuario;
     }
 
     public String getCorreo_Usuario() {
@@ -49,7 +69,7 @@ public class Usuarios {
     }
 
     public void setCorreo_Usuario(String correo_Usuario) {
-        this.Correo_Usuario = Correo_Usuario;
+        Correo_Usuario = correo_Usuario;
     }
 
     public String getContrasena_Usuario() {
@@ -57,7 +77,7 @@ public class Usuarios {
     }
 
     public void setContrasena_Usuario(String contrasena_Usuario) {
-        this.Contrasena_Usuario = Contrasena_Usuario;
+        Contrasena_Usuario = contrasena_Usuario;
     }
 
     public String getRol_Usuario() {
@@ -65,20 +85,19 @@ public class Usuarios {
     }
 
     public void setRol_Usuario(String rol_Usuario) {
-        this.Rol_Usuario = rol_Usuario;
+        Rol_Usuario = rol_Usuario;
     }
 
     public Usuarios() {
     }
 
-    public Usuarios(String nombre_Usuario,String apellido_Usuario,String cedula_Usuario,String telefono_Usuario,
-                    String correo_Usuario,String contrasena_Usuario,String rol_Usuario) {
+    public Usuarios(String nombre_Usuario, String apellido_Usuario, String cedula_Usuario, String telefono_Usuario, String correo_Usuario, String contrasena_Usuario, String rol_Usuario) {
+        Nombre_Usuario = nombre_Usuario;
+        Apellido_Usuario = apellido_Usuario;
         Cedula_Usuario = cedula_Usuario;
-        this.Nombre_Usuario = nombre_Usuario;
-        this.Apellido_Usuario = apellido_Usuario;
-        this.Telefono_Usuario = telefono_Usuario;
-        this.Correo_Usuario = correo_Usuario;
-        this.Contrasena_Usuario = contrasena_Usuario;
-        this.Rol_Usuario = rol_Usuario;
+        Telefono_Usuario = telefono_Usuario;
+        Correo_Usuario = correo_Usuario;
+        Contrasena_Usuario = contrasena_Usuario;
+        Rol_Usuario = rol_Usuario;
     }
 }
