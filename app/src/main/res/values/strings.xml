@@ -105,6 +105,9 @@
     <string name="fragment_marca_prest">marca</string>
     <string name="fragment_serial_prest">serial</string>
     <string name="fragment_nombre_prest">nombre</string>
+    <string name="ConInv">Consultas Inventarios</string>
+    <string name="CorreoU">Email</string>
+    <string name="Bott">Actualizar</string>
 
 
 </resources>

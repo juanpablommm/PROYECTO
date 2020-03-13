@@ -83,29 +83,6 @@ public class RegistrarActivos extends Fragment {
 
 
     }
-    /*public void Onclick(View v){
-        Intent intent=new Intent(getContext(),Recuperar_Contrasenia.class);
-        startActivity(intent);
-
-    }
-
-    public void registraractivos(){
-        String NombreActivo=Nombre_activo.getText().toString();
-        String CantidadActivo=Cantidad_activo.getText().toString();
-        String MarcaActivo=Marca_activo.getText().toString();
-        String SerialActivo=Serial_activo.getText().toString();
-
-        if (!TextUtils.isEmpty(NombreActivo)){
-            String id= UUID.randomUUID().toString();
-            Activos activos=new Activos(id,NombreActivo, CantidadActivo, MarcaActivo, SerialActivo);
-            Activosdb.child(id).setValue(activos);
-            Toast.makeText(getContext(),"Regisstro Exitoso",Toast.LENGTH_SHORT).show();
-        }
-        else {
-            Toast.makeText(getContext(),"ingresar datos",Toast.LENGTH_SHORT).show();
-        }
-
-    }*/
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {

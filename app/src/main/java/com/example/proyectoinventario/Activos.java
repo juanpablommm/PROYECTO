@@ -2,7 +2,11 @@ package com.example.proyectoinventario;
 
 public class Activos {
 
-    String Idactivo,NombreActivo, CantidadActivo, MarcaActivo, SerialActivo;
+    String Idactivo;
+    String NombreActivo;
+    String CantidadActivo;
+    String MarcaActivo;
+    String SerialActivo;
 
 
     public Activos(String idactivo, String nombreActivo, String cantidadActivo, String marcaActivo, String serialActivo) {
