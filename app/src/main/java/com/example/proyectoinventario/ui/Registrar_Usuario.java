@@ -57,22 +57,24 @@ public class Registrar_Usuario extends Fragment {
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String Nombre = editTextNombre.getText().toString();
-                String Apellido = editTextApellido.getText().toString();
-                String Cedula = editTextCedula.getText().toString();
-                String Telefono = editTextTelefono.getText().toString();
-                String Correo = editTextCorreo.getText().toString();
-                String Contrasena = editTextContrasena.getText().toString();
-                String Rol = editTextRol.getText().toString();
+
+                Usuarios usuarios = new Usuarios();
+                usuarios.setNombre_Usuario(editTextNombre.getText().toString());
+                usuarios.setApellido_Usuario(editTextApellido.getText().toString());
+                usuarios.setCedula_Usuario(editTextCedula.getText().toString());
+                usuarios.setTelefono_Usuario(editTextTelefono.getText().toString());
+                usuarios.setCorreo_Usuario(editTextCorreo.getText().toString());
+                usuarios.setContrasena_Usuario(editTextContrasena.getText().toString());
+                usuarios.setRol_Usuario(editTextRol.getText().toString());
 
                 //FirebaseAuth
-                mAuth.createUserWithEmailAndPassword(Correo, Contrasena)
+                mAuth.createUserWithEmailAndPassword(usuarios.getCorreo_Usuario(), usuarios.getContrasena_Usuario())
                         .addOnCompleteListener((Executor) getContext(), new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
-                                    FirebaseUser user = mAuth.getCurrentUser();
+
                                     Toast.makeText(getContext(),"Usuario Creado",Toast.LENGTH_SHORT).show();
                                 } else {
                                     // If sign in fails, display a message to the user.
@@ -91,7 +93,7 @@ public class Registrar_Usuario extends Fragment {
 
 
 
-                //myRef.child().setValue();
+                myRef.child(usuarios.getCorreo_Usuario()).setValue(usuarios);
 
 
             }
