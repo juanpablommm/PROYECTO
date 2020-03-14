@@ -19,7 +19,6 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.proyectoinventario.R;
-import com.example.proyectoinventario.ui.Ambiente;
 import com.example.proyectoinventario.ui.Prestamo;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -48,7 +47,7 @@ public class RegistrarPrestamo extends Fragment {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.registrar_prestamo, container, false);
-        final TextView textView = root.findViewById(R.id.Registrar_Ambiente);
+        final TextView textView = root.findViewById(R.id.Registrar_Prestamo);
         editTextNombre_Prestamo = (EditText) root.findViewById(R.id.fragment_Nombre_Ambiente);
         editTextSerial_Ambiente = (EditText) root.findViewById(R.id.fragment_Codigo_Ambiente);
         editTextMarca_Prestamo = (EditText) root.findViewById(R.id.fragment_Zona_Ambiente);

@@ -1,6 +1,5 @@
 package com.example.proyectoinventario.ui.RegistrarAmbiente;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -11,17 +10,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.proyectoinventario.Activos;
 import com.example.proyectoinventario.R;
-import com.example.proyectoinventario.Recuperar_Contrasenia;
 import com.example.proyectoinventario.ui.Ambiente;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -50,7 +44,7 @@ public class RegistrarAmbiente extends Fragment {
         slideshowViewModel =
                 ViewModelProviders.of(this).get(SlideshowViewModel.class);
         View root = inflater.inflate(R.layout.registrar_ambiente, container, false);
-        final TextView textView = root.findViewById(R.id.Registrar_Ambiente);
+        final TextView textView = root.findViewById(R.id.Registrar_Prestamo);
         editTextNombre_Ambiente=(EditText)root.findViewById(R.id.fragment_Nombre_Ambiente);
         editTextCodigo_Ambiente=(EditText)root.findViewById(R.id.fragment_Codigo_Ambiente);
         editTextZona_Abiemte=(EditText)root.findViewById(R.id.fragment_Zona_Ambiente);

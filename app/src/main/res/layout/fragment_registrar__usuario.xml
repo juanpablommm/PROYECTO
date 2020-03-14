@@ -13,7 +13,7 @@
         android:layout_width="383dp"
         android:layout_height="27dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="24dp"
         android:text="Registrar Usuario"
         android:textAlignment="center"
@@ -26,10 +26,10 @@
 
     <TableLayout
         android:id="@+id/tableLayout2"
-        android:layout_width="397dp"
-        android:layout_height="137dp"
+        android:layout_width="390dp"
+        android:layout_height="281dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="90dp"
         android:layout_marginEnd="6dp"
         android:layout_marginBottom="129dp"
         app:layout_constraintBottom_toTopOf="@+id/boton_agregar_usu"
@@ -59,22 +59,6 @@
                 android:textColor="#0C0C0C"
                 android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/Cedula_usu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cedula"
-                android:textColor="#0C0C0C"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/tel_usu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Telefono"
-                android:textColor="#0C0C0C"
-                android:textSize="18sp" />
-
         </TableRow>
 
         <TableRow
@@ -95,12 +79,32 @@
                 android:ems="10"
                 android:inputType="textPersonName" />
 
-            <EditText
-                android:id="@+id/Documento_usu"
-                android:layout_width="89dp"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tel_usu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono"
+                android:textColor="#0C0C0C"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Cedula_usu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cedula"
+                android:textColor="#0C0C0C"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/Telefono_usu"
@@ -109,11 +113,17 @@
                 android:ems="10"
                 android:inputType="number" />
 
+            <EditText
+                android:id="@+id/Documento_usu"
+                android:layout_width="171dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="number" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="106dp">
 
             <TextView
                 android:id="@+id/Correo_Usu"
@@ -122,6 +132,23 @@
                 android:text="@string/Correo_Usu"
                 android:textColor="#0C0C0C"
                 android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/In_correo_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/Contraseña_usu"
@@ -139,19 +166,11 @@
                 android:textAlignment="center"
                 android:textColor="#0C0C0C"
                 android:textSize="18sp" />
-
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="106dp">
-
-            <EditText
-                android:id="@+id/In_correo_usuario"
-                android:layout_width="101dp"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="textPersonName" />
+            android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/In_Contraseña_usu"
@@ -166,7 +185,6 @@
                 android:layout_height="match_parent"
                 android:ems="10"
                 android:inputType="textPersonName" />
-
         </TableRow>
     </TableLayout>
 
@@ -175,14 +193,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="100dp"
         android:background="#31070707"
         android:text="Agregar"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
 

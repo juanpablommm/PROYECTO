@@ -61,7 +61,7 @@
     <string name="btn_reporte">REPORTE</string>
     <string name="btn_eliminar">ELIMINAR</string>
     <string name="tx_devo_id">ingrese Id</string>
-    <string name="registrar_activos">Registrar_Activos</string>
+    <string name="registrar_activos">Registrar Activos</string>
     <string name="tx_devo_nombre">Nombre</string>
     <string name="tx_devo_marca">Marca</string>
     <string name="pres_nom">nombre</string>

@@ -11,6 +11,7 @@
         android:id="@+id/Registrar_Devolucion"
         android:layout_width="412dp"
         android:layout_height="42dp"
+        android:layout_marginTop="100dp"
         android:text="@string/Registrar_Devolucion"
         android:textAlignment="center"
         android:textColor="#090909"
@@ -23,21 +24,19 @@
         android:id="@+id/button_RegistroD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="173dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:background="#9C0277BD"
         android:onClick="registra"
         android:text="@string/boton_registrarD"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/list_regis_devo" />
 
     <TableLayout
         android:id="@+id/tableLayout3"
         android:layout_width="412dp"
         android:layout_height="25dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Registrar_Devolucion">
 
@@ -94,8 +93,8 @@
 
     <ListView
         android:id="@+id/list_regis_devo"
-        android:layout_width="408dp"
-        android:layout_height="190dp"
+        android:layout_width="406dp"
+        android:layout_height="332dp"
         android:background="#43FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />

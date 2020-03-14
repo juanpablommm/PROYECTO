@@ -7,36 +7,99 @@
     android:layout_height="match_parent"
     tools:ignore="MissingDefaultResource">
 
+    <TextView
+        android:id="@+id/Registrar_Prestamo"
+        android:layout_width="412dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:background="#002B2B2B"
+        android:text="@string/registrar_prestamo"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TableLayout
         android:id="@+id/tableLayout_Ambiente"
-        android:layout_width="412dp"
-        android:layout_height="123dp"
-        android:layout_marginTop="176dp"
+        android:layout_width="397dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/Registrar_Prestamo">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
             android:scrollbarSize="@dimen/activity_vertical_margin">
 
             <TextView
                 android:id="@+id/frag_Nombre_Ambiente"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="#0003A9F4"
                 android:text="@string/Nombre_RPrestamo"
+                android:textAlignment="center"
                 android:textColor="#070707"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/fragment_serial_prestamo"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#0003A9F4"
                 android:text="@string/RPrestamo"
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/Spinner_fragment_prestamo"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:backgroundTint="#03A9F4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="378dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/fragment_Nombre_Ambiente"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/fragment_Codigo_Ambiente"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/fragment_prestamo_canti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0003A9F4"
+                android:text="@string/Cantidad_RPrestamo"
+                android:textAlignment="center"
                 android:textColor="#070707"
                 android:textSize="18sp" />
 
@@ -46,82 +109,33 @@
                 android:layout_height="wrap_content"
                 android:background="#0003A9F4"
                 android:text="@string/Marca_RPrestamo"
+                android:textAlignment="center"
                 android:textColor="#070707"
                 android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/fragment_prestamo_canti"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#0003A9F4"
-                android:text="@string/Cantidad_RPrestamo"
-                android:textColor="#070707"
-                android:textSize="18sp" />
-
-            <Spinner
-                android:id="@+id/Spinner_fragment_prestamo"
-                android:layout_width="76dp"
-                android:layout_height="match_parent"
-                android:layout_span="1"
-                android:backgroundTint="#03A9F4" />
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <EditText
-                android:id="@+id/fragment_Nombre_Ambiente"
-                android:layout_width="111dp"
-                android:layout_height="match_parent"
-                android:layout_span="1"
-                android:ems="10"
-                android:inputType="textPersonName" />
-
-            <EditText
-                android:id="@+id/fragment_Codigo_Ambiente"
-                android:layout_width="77dp"
-                android:layout_height="wrap_content"
-                android:layout_span="1"
-                android:ems="10"
-                android:inputType="number" />
-
-            <EditText
-                android:id="@+id/fragment_Zona_Ambiente"
-                android:layout_width="55dp"
-                android:layout_height="wrap_content"
-                android:layout_span="1"
-                android:ems="10"
-                android:inputType="textPersonName" />
+            android:layout_width="353dp"
+            android:layout_height="100dp">
 
             <EditText
                 android:id="@+id/fragment_Serial_Prestamo"
                 android:layout_width="80dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/fragment_Zona_Ambiente"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
                 android:layout_span="1"
                 android:ems="10"
                 android:inputType="textPersonName" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </TableRow>
-
     </TableLayout>
-
-    <TextView
-        android:id="@+id/Registrar_Ambiente"
-        android:layout_width="412dp"
-        android:layout_height="42dp"
-        android:background="#002B2B2B"
-        android:text="@string/registrar_prestamo"
-        android:textAlignment="center"
-        android:textColor="#020202"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/fragment_boton_eliminar"
