@@ -7,32 +7,17 @@
     android:layout_height="match_parent"
     tools:ignore="MissingDefaultResource">
 
-    <TextView
-        android:id="@+id/Registrar_Prestamo"
-        android:layout_width="412dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="8dp"
-        android:background="#002B2B2B"
-        android:text="@string/registrar_prestamo"
-        android:textAlignment="center"
-        android:textColor="#020202"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
         android:id="@+id/tableLayout_Ambiente"
         android:layout_width="397dp"
         android:layout_height="171dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="250dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Registrar_Prestamo">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="80dp"
@@ -45,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:background="#0003A9F4"
                 android:text="@string/Nombre_RPrestamo"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#070707"
                 android:textSize="18sp" />
 
@@ -55,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:background="#0003A9F4"
                 android:text="@string/RPrestamo"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#070707"
                 android:textSize="18sp" />
 
@@ -95,11 +80,11 @@
 
             <TextView
                 android:id="@+id/fragment_prestamo_canti"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
                 android:background="#0003A9F4"
                 android:text="@string/Cantidad_RPrestamo"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#070707"
                 android:textSize="18sp" />
 
@@ -109,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:background="#0003A9F4"
                 android:text="@string/Marca_RPrestamo"
-                android:textAlignment="center"
+                android:textAlignment="viewStart"
                 android:textColor="#070707"
                 android:textSize="18sp" />
         </TableRow>
@@ -120,11 +105,11 @@
 
             <EditText
                 android:id="@+id/fragment_Serial_Prestamo"
-                android:layout_width="80dp"
+                android:layout_width="164dp"
                 android:layout_height="match_parent"
                 android:layout_span="1"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="number" />
 
             <EditText
                 android:id="@+id/fragment_Zona_Ambiente"
@@ -142,7 +127,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="157dp"
         android:background="#9C0277BD"
         android:text="@string/bottom_RPrestamo"

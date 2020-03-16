@@ -6,38 +6,20 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Registrar_Usuario" >
-
-    <TextView
-        android:id="@+id/Actualizar_Usu"
-        android:layout_width="383dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="24dp"
-        android:text="Registrar Usuario"
-        android:textAlignment="center"
-        android:textColor="#020202"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".ui.RegistrarUsuario.Registrar_Usuario" >
 
     <TableLayout
         android:id="@+id/tableLayout2"
-        android:layout_width="390dp"
-        android:layout_height="281dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="6dp"
+        android:layout_width="391dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="129dp"
         app:layout_constraintBottom_toTopOf="@+id/boton_agregar_usu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Actualizar_Usu"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
@@ -177,7 +159,7 @@
                 android:layout_width="74dp"
                 android:layout_height="match_parent"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textPassword" />
 
             <EditText
                 android:id="@+id/In_rol_usu"
@@ -193,7 +175,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="100dp"
         android:background="#31070707"
         android:text="Agregar"

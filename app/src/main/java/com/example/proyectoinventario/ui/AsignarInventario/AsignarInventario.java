@@ -23,11 +23,11 @@ public class AsignarInventario extends Fragment {
         toolsViewModel =
                 ViewModelProviders.of(this).get(ToolsViewModel.class);
         View root = inflater.inflate(R.layout.asignar_inventario, container, false);
-        final TextView textView = root.findViewById(R.id.asinar);
-        toolsViewModel.getText().observe(this, new Observer<String>() {
+        //final TextView textView = root.findViewById(R.id.tituloIn);
+        toolsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                //textView.setText(s);
             }
         });
         return root;

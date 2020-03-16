@@ -10,13 +10,13 @@
         android:id="@+id/tableLayout_Ambiente"
         android:layout_width="396dp"
         android:layout_height="82dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="250dp"
         android:layout_marginBottom="44dp"
         app:layout_constraintBottom_toTopOf="@+id/fragment_boton_eliminar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Registrar_Prestamo">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
@@ -86,23 +86,6 @@
         </TableRow>
 
     </TableLayout>
-
-    <TextView
-        android:id="@+id/Registrar_Prestamo"
-        android:layout_width="412dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="1dp"
-        android:background="#002B2B2B"
-        android:text="@string/Registrar_Ambiente"
-        android:textAlignment="center"
-        android:textColor="#090909"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/fragment_boton_eliminar"

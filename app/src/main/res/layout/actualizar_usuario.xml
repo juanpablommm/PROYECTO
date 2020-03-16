@@ -6,7 +6,7 @@
     android:background="@drawable/cambia"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActualizarUsuario">
+    tools:context=".ui.RegistrarUsuario.ActualizarUsuario">
 
 
     <TextView

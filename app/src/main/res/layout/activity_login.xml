@@ -15,7 +15,7 @@
         android:layout_width="115dp"
         android:layout_height="33dp"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="47dp"
         android:layout_marginEnd="136dp"
         android:background="#433CEBC2"
         android:onClick="Ingresar"
@@ -57,26 +57,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
-    <EditText
-        android:id="@+id/Contraseña"
-        android:layout_width="223dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="83dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:hint="@string/Contraseña"
-        android:inputType="textPassword"
-        android:textAlignment="center"
-        android:textColor="#0F0F0F"
-        android:textColorHighlight="#AD1457"
-        android:textColorHint="#4F050505"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CampoUsuario" />
-
     <TextView
         android:id="@+id/Recuperar"
         android:layout_width="wrap_content"
@@ -97,22 +77,32 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
 
     <EditText
-    android:id="@+id/CampoUsuario"
-    android:layout_width="223dp"
-    android:layout_height="45dp"
-    android:layout_marginStart="83dp"
-    android:layout_marginTop="80dp"
-    android:layout_marginEnd="83dp"
-    android:background="#FFFFFF"
-    android:ems="10"
-    android:hint="@string/Ingresar_Usuario"
+        android:id="@+id/CampoUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/mail"
         android:inputType="textEmailAddress"
-    android:textAlignment="center"
-    android:textColorHighlight="#030303"
-    android:textColorHint="#4F050505"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/Contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CampoUsuario" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,5 @@
-package com.example.proyectoinventario.ui;
+package com.example.proyectoinventario.ui.RegistrarPrestamo;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,15 +10,13 @@ import android.view.ViewGroup;
 
 import com.example.proyectoinventario.R;
 
+
 /**
  * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
-
- * to handle interaction events.
- * Use the {@link ConsultarCuentadantes#newInstance} factory method to
+ * Use the {@link fragment_eliminar_prestamo#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ConsultarCuentadantes extends Fragment {
+public class fragment_eliminar_prestamo extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +26,7 @@ public class ConsultarCuentadantes extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ConsultarCuentadantes() {
+    public fragment_eliminar_prestamo() {
         // Required empty public constructor
     }
 
@@ -40,11 +36,11 @@ public class ConsultarCuentadantes extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Consultar_Cuentadantes.
+     * @return A new instance of fragment fragment_eliminar_prestamo.
      */
     // TODO: Rename and change types and number of parameters
-    public static ConsultarCuentadantes newInstance(String param1, String param2) {
-        ConsultarCuentadantes fragment = new ConsultarCuentadantes();
+    public static fragment_eliminar_prestamo newInstance(String param1, String param2) {
+        fragment_eliminar_prestamo fragment = new fragment_eliminar_prestamo();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,9 +61,6 @@ public class ConsultarCuentadantes extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_consultar__cuentadantes, container, false);
+        return inflater.inflate(R.layout.fragment_eliminar_prestamo, container, false);
     }
-
-
-
 }

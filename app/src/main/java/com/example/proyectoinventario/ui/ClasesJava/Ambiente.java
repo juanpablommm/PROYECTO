@@ -1,4 +1,4 @@
-package com.example.proyectoinventario.ui;
+package com.example.proyectoinventario.ui.ClasesJava;
 
 public class Ambiente {
 

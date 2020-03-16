@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.proyectoinventario.R;
-import com.example.proyectoinventario.ui.Ambiente;
+import com.example.proyectoinventario.ui.ClasesJava.Ambiente;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -37,14 +37,14 @@ public class RegistrarAmbiente extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        Ambientedb= FirebaseDatabase.getInstance().getReference("Ambiente");
+        Ambientedb= FirebaseDatabase.getInstance().getReference("Ambientes");
 
 
 
         slideshowViewModel =
                 ViewModelProviders.of(this).get(SlideshowViewModel.class);
         View root = inflater.inflate(R.layout.registrar_ambiente, container, false);
-        final TextView textView = root.findViewById(R.id.Registrar_Prestamo);
+        //final TextView textView = root.findViewById(R.id.Registrar_Prestamo);
         editTextNombre_Ambiente=(EditText)root.findViewById(R.id.fragment_Nombre_Ambiente);
         editTextCodigo_Ambiente=(EditText)root.findViewById(R.id.fragment_Codigo_Ambiente);
         editTextZona_Abiemte=(EditText)root.findViewById(R.id.fragment_Zona_Ambiente);

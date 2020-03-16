@@ -1,6 +1,5 @@
 package com.example.proyectoinventario.ui.RegistrarActivos;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -16,12 +15,10 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.proyectoinventario.Activos;
+import com.example.proyectoinventario.ui.ClasesJava.Activos;
 import com.example.proyectoinventario.R;
-import com.example.proyectoinventario.Recuperar_Contrasenia;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -76,7 +73,7 @@ public class RegistrarActivos extends Fragment {
                 }
             }
         });
-        final TextView textView = root.findViewById(R.id.RegistrarActivos);
+        //final TextView textView = root.findViewById(R.id.RegistrarActivos);
 
         return root;
 

@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
     <item
         android:id="@+id/action_settings"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/avatar"
         android:orderInCategory="100"
         android:title="@string/action_settings"
+        android:onClick="cerrar sesion"
         app:showAsAction="always" />
+
+    <item
+        android:title="@string/Perfil"
+        android:enabled="true"
+        android:orderInCategory="100"
+        android:onClick="Informacion Perfil"
+         />
+
+    </group>
 </menu>

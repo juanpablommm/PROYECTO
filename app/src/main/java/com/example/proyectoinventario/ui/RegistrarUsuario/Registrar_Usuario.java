@@ -1,4 +1,4 @@
-package com.example.proyectoinventario.ui;
+package com.example.proyectoinventario.ui.RegistrarUsuario;
 
 import android.os.Bundle;
 
@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.proyectoinventario.R;
+import com.example.proyectoinventario.ui.ClasesJava.Usuarios;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

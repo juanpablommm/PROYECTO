@@ -108,6 +108,17 @@
     <string name="ConInv">Consultas Inventarios</string>
     <string name="CorreoU">Email</string>
     <string name="Bott">Actualizar</string>
+    <string name="todo">TODO</string>
+    <string name="Perfil">perfil</string>
+    <string name="BottnA">Actiualizar</string>
+    <string name="BottnE">Eliminar</string>
+    <string name="BottnR">Reportes</string>
+    <string name="BottnAsi">Asignar</string>
+    <string name="TituloPre">Registar Prestamo</string>
+    <string name="TituloIn">Asignar Inventario</string>
+    <string name="hiEmail">E-mail  Sena12@gmail.com</string>
+    <string name="Password">Password</string>
+    <string name="mail">sell12@gmail.com</string>
 
 
 </resources>

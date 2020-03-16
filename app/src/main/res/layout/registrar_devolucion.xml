@@ -7,38 +7,13 @@
     android:layout_height="match_parent"
     tools:ignore="MissingDefaultResource">
 
-    <TextView
-        android:id="@+id/Registrar_Devolucion"
-        android:layout_width="412dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="100dp"
-        android:text="@string/Registrar_Devolucion"
-        android:textAlignment="center"
-        android:textColor="#090909"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button_RegistroD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="#9C0277BD"
-        android:onClick="registra"
-        android:text="@string/boton_registrarD"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list_regis_devo" />
-
     <TableLayout
         android:id="@+id/tableLayout3"
         android:layout_width="412dp"
         android:layout_height="25dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="200dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Registrar_Devolucion">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
@@ -98,5 +73,17 @@
         android:background="#43FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout3" />
+
+    <Button
+        android:id="@+id/button_RegistroD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#9C0277BD"
+        android:onClick="registra"
+        android:text="@string/boton_registrarD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_regis_devo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

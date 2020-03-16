@@ -7,34 +7,17 @@
     android:background="@drawable/cambia">
 
 
-    <TextView
-        android:id="@+id/Registrar_Activos"
-        android:layout_width="412dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="8dp"
-        android:background="#009C27B0"
-        android:text="@string/registrar_activos"
-        android:textAlignment="center"
-        android:textColor="#090909"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="401dp"
-        android:layout_height="169dp"
+        android:layout_width="394dp"
+        android:layout_height="168dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="242dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Registrar_Activos">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
@@ -139,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="8dp"
         android:background="#9C0277BD"
         android:text="@string/Registrar_Activos_Bottom"
