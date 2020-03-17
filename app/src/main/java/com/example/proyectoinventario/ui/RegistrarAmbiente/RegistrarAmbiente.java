@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -48,7 +47,7 @@ public class RegistrarAmbiente extends Fragment {
         editTextNombre_Ambiente=(EditText)root.findViewById(R.id.fragment_Nombre_Ambiente);
         editTextCodigo_Ambiente=(EditText)root.findViewById(R.id.fragment_Codigo_Ambiente);
         editTextZona_Abiemte=(EditText)root.findViewById(R.id.fragment_Zona_Ambiente);
-        botton_Registrar_Ambiente=(Button) root.findViewById(R.id.fragment_boton_eliminar);
+        botton_Registrar_Ambiente=(Button) root.findViewById(R.id.fragment_boton_Registrar);
 
         botton_Registrar_Ambiente.setOnClickListener(new View.OnClickListener() {
             @Override

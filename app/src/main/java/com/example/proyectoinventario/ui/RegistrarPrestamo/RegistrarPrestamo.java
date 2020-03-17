@@ -9,7 +9,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -53,7 +52,7 @@ public class RegistrarPrestamo extends Fragment {
         editTextCantidad_Prestamo = (EditText) root.findViewById(R.id.fragment_Serial_Prestamo);
         Spinner_Prestamo = (Spinner) root.findViewById(R.id.Spinner_fragment_prestamo);
 
-        botton_Registrar_Prestamo=(Button) root.findViewById(R.id.fragment_boton_eliminar);
+        botton_Registrar_Prestamo=(Button) root.findViewById(R.id.fragment_boton_Registrar);
 
         botton_Registrar_Prestamo.setOnClickListener(new View.OnClickListener() {
             @Override

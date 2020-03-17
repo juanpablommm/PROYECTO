@@ -103,7 +103,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/fragment_boton_eliminar"
+                android:id="@+id/fragment_boton_Registrar"
                 android:layout_width="95dp"
                 android:layout_height="match_parent"
                 tools:text="@string/boton_eliminarpres" />

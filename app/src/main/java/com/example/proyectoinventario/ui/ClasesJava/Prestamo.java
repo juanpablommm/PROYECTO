@@ -38,8 +38,6 @@ public class Prestamo {
         return Cantidad_Prestamo;
     }
 
-    public String getSpinner_Prestamo() {
-        return Spinner_Prestamo;
-    }
+    public String getSpinner_Prestamo() { return Spinner_Prestamo; }
 }
 

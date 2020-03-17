@@ -12,7 +12,7 @@
         android:layout_height="82dp"
         android:layout_marginTop="250dp"
         android:layout_marginBottom="44dp"
-        app:layout_constraintBottom_toTopOf="@+id/fragment_boton_eliminar"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_boton_Registrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/fragment_boton_eliminar"
+        android:id="@+id/fragment_boton_Registrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
