@@ -52,6 +52,20 @@
         android:name="com.example.proyectoinventario.PantallaInicio"
         android:label="Pantalla Inicio"
         tools:layout="@layout/pantalla_inicio" />
+    <fragment
+        android:id="@+id/eliminar_devo2"
+        android:name="com.example.proyectoinventario.ui.RegistrarDevolucion.eliminar_devo"
+        android:label="fragment_eliminar_devo"
+        tools:layout="@layout/fragment_eliminar_devo" />
+    <fragment
+        android:id="@+id/fragment_eliminar_prestamo2"
+        android:name="com.example.proyectoinventario.ui.RegistrarPrestamo.fragment_eliminar_prestamo"
+        android:label="fragment_eliminar_prestamo" />
+    <fragment
+        android:id="@+id/actualizarUsuario3"
+        android:name="com.example.proyectoinventario.ui.ActualizarUsuario.ActualizarUsuario"
+        android:label="actualizar_usuario"
+        tools:layout="@layout/actualizar_usuario" />
 
 
 </navigation>

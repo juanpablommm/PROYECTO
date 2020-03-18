@@ -1,4 +1,4 @@
-package com.example.proyectoinventario.ui.RegistrarUsuario;
+package com.example.proyectoinventario.ui.ActualizarUsuario;
 
 import android.os.Bundle;
 
