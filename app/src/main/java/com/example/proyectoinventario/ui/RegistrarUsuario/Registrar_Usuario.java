@@ -75,11 +75,11 @@ public class Registrar_Usuario extends Fragment {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
-                                    Toast.makeText(view.getContext(), "usuario credo",
+                                    Toast.makeText(view.getContext(), "Usuario registrado",
                                             Toast.LENGTH_SHORT).show();
                                 } else {
                                     // If sign in fails, display a message to the user.
-                                    Toast.makeText(view.getContext(), "Authentication failed.",
+                                    Toast.makeText(view.getContext(), "No se pudo registrar el usuario",
                                             Toast.LENGTH_SHORT).show();
                                 }
 
@@ -129,7 +129,7 @@ public class Registrar_Usuario extends Fragment {
                             if (task.isSuccessful()) {
                                 // Sign in success, update UI with the signed-in user's information
                                 FirebaseUser user = mAuth.getCurrentUser();
-                                Toast.makeText(getContext(),"Usuario Creado",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(),"Usuario registrado",Toast.LENGTH_SHORT).show();
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Toast.makeText(getContext(),task.getException().toString(),Toast.LENGTH_SHORT).show();
