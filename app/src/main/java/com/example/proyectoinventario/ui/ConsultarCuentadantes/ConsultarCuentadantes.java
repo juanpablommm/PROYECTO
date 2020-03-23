@@ -117,7 +117,7 @@ public class ConsultarCuentadantes extends Fragment {
                             textViewcedula.setText("Cedula: "+cedula);
                             textViewcorreo.setText("Correo: "+correo);
                             textViewcontraseña.setText("Contraseña: "+contraseña);
-                            textViewrol.setText("Rol: "+rol );
+                            textViewrol.setText("Rol: " +rol);
 
                         }
 
