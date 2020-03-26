@@ -1,18 +1,28 @@
-package com.example.proyectoinventario.ui;
+package com.example.proyectoinventario;
 
 public class Usuarios {
 
-    String nombre_Usuario;
-    String apellido_Usuario;
-    String cedula_Usuario;
-    String telefono_Usuario;
-    String correo_Usuario;
-    String contrasena_Usuario;
-    String idUsuario;
-    String rol_Usuario;
 
-    public Usuarios() {
+    private String nombre_Usuario;
+    private String apellido_Usuario;
+    private String cedula_Usuario;
+    private String telefono_Usuario;
+    private String correo_Usuario;
+    private String contrasena_Usuario;
+    private String idUsuario;
+    private String rol_Usuario;
 
+    public Usuarios(String nombre_Usuario, String apellido_Usuario,
+                    String cedula_Usuario, String telefono_Usuario, String correo_Usuario,
+                    String contrasena_Usuario, String idUsuario, String rol_Usuario) {
+        this.nombre_Usuario = nombre_Usuario;
+        this.apellido_Usuario = apellido_Usuario;
+        this.cedula_Usuario = cedula_Usuario;
+        this.telefono_Usuario = telefono_Usuario;
+        this.correo_Usuario = correo_Usuario;
+        this.contrasena_Usuario = contrasena_Usuario;
+        this.idUsuario = idUsuario;
+        this.rol_Usuario = rol_Usuario;
     }
 
     public String getNombre_Usuario() {

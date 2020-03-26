@@ -1,25 +1,33 @@
 package com.example.proyectoinventario.ui.ConsultarCuentadantes;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.proyectoinventario.AdapterUsuarios;
+import com.example.proyectoinventario.Muestras;
 import com.example.proyectoinventario.R;
+
 import com.example.proyectoinventario.ui.ClasesJava.Usuarios;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -36,14 +44,10 @@ public class ConsultarCuentadantes extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     View vista;
-    TextView textViewnombre;
-    TextView textViewapellido;
-    TextView textViewtelefono;
-    TextView textViewcedula;
-    TextView textViewcorreo;
-    TextView textViewcontraseña;
-    TextView textViewrol;
-    Button buttonleer;
+    DatabaseReference reference;
+    RecyclerView recyclerView;
+    ArrayList<Usuarios> list;
+    AdapterUsuarios adapter;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -81,60 +85,39 @@ public class ConsultarCuentadantes extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        vista=inflater.inflate(R.layout.fragment_consultar__cuentadantes, container, false);
-        textViewnombre=vista.findViewById(R.id.textViewnombreConsultar);
-        textViewapellido=vista.findViewById(R.id.textViapellidoConsultar);
-        textViewtelefono=vista.findViewById(R.id.textViatelefonoConsultar);
-        textViewcedula=vista.findViewById(R.id.textVicedulaConsultar);
-        textViewcorreo=vista.findViewById(R.id.textCorreoConsultar);
-        textViewcontraseña=vista.findViewById(R.id.textVicontraseñaConsultar);
-        textViewrol=vista.findViewById(R.id.textVirolConsultar);
+        vista = inflater.inflate(R.layout.fragment_consultar__cuentadantes, container, false);
 
-        FirebaseDatabase database=FirebaseDatabase.getInstance();
-        final DatabaseReference databaseReference= database.getReference();
-        databaseReference.child("Usuarios").addValueEventListener(new ValueEventListener() {
+        recyclerView = (RecyclerView) vista.findViewById(R.id.RecyclerUsuarios);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        list = new ArrayList<Usuarios>();
+
+
+        reference = FirebaseDatabase.getInstance().getReference().child("Usuarios");
+        reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (final DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    databaseReference.child("Usuarios").child(snapshot.getKey()).addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                            Usuarios usuarios=snapshot.getValue(Usuarios.class);
-                            String nombre=usuarios.getNombre_Usuario();
-                            String apellido=usuarios.getApellido_Usuario();
-                            String telefono=usuarios.getTelefono_Usuario();
-                            String cedula=usuarios.getCedula_Usuario();
-                            String correo=usuarios.getCorreo_Usuario();
-                            String contraseña=usuarios.getContrasena_Usuario();
-                            String rol=usuarios.getRol_Usuario();
-                            textViewapellido.setText("Apellidos: "+apellido);
-                            textViewnombre.setText("Nombre: "+ nombre);
-                            textViewtelefono.setText("Telefono: "+telefono);
-                            textViewcedula.setText("Cedula: "+cedula);
-                            textViewcorreo.setText("Correo: "+correo);
-                            textViewcontraseña.setText("Contraseña: "+contraseña);
-                            textViewrol.setText("Rol: " +rol);
-
-                        }
-
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                        }
-                    });
+                for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
+                    Usuarios p = dataSnapshot1.getValue(Usuarios.class);
+                    list.add(p);
 
                 }
+
+
+                adapter=new AdapterUsuarios(vista,container.getContext());
+                recyclerView.setAdapter(adapter);
+
+
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                Toast.makeText(getContext(), "Opass...", Toast.LENGTH_SHORT).show();
             }
         });
+
 
 
 

@@ -1,83 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout3"
-    android:orientation="vertical"
+
     android:layout_width="match_parent"
-    android:background="@drawable/cambia"
-    android:layout_height="wrap_content"
+
+    android:layout_height="match_parent"
 
     tools:context=".ui.ConsultarCuentadantes.ConsultarCuentadantes"
-    android:layout_margin="60dp">
+    >
 
-
-    <TextView
-        android:id="@+id/textViewnombreConsultar"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerUsuarios"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nombre"
-        android:textSize="17dp"/>
+        android:layout_height="match_parent" />
 
-    <TextView
-        android:id="@+id/textViapellidoConsultar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Apellido"
-        android:textSize="17dp"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:id="@+id/textViatelefonoConsultar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Telefono"
-        android:textSize="17dp"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:id="@+id/textVicedulaConsultar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Cedula"
-        android:textSize="17dp"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:id="@+id/textCorreoConsultar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Correo"
-        android:textSize="17dp"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:id="@+id/textVicontraseñaConsultar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Contraseña"
-        android:textSize="17dp"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:id="@+id/textVirolConsultar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Rol"
-        android:textSize="17dp"
-        android:layout_marginTop="20dp"/>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="20dp"/>
-
-
-
-
-
-
-    <!-- TODO: Update blank fragment layout -->
-
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
